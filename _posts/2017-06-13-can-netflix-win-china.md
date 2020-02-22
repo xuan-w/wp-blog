@@ -1,15 +1,17 @@
 ---
-post_title: 'Netflix与中美在线视频市场'
-post_name: 'Can Netflix win China'
-post_date: '2017-06-13 15:21:26'
-layout: post
-published: true
+ID: 32
+post_title: Netflix与中美在线视频市场
+post_name: can-netflix-win-china
 author: Xuan
+post_date: 2017-06-13 15:21:26
+layout: post
+link: >
+  http://blog.wangxuan.name/2017/06/13/can-netflix-win-china/
+published: true
 tags: [ ]
 categories:
   - Personal Opinion
 ---
-
 原标题：理解 Netflix 的当前战略和入华前景分析
 
 
@@ -25,6 +27,3 @@ Netflix 最大的对手，正是 HBO。HBO有足够好的独家电视剧，还�
 至此，Netflix 放弃了做一个在线视频垄断巨头的路线，而立志成为最好的“在线电视台”。这就是 Netflix 现在的情况：大力投资剧集，少量投资电影，打造独家内容，希望自己成为那个“你不会取消订阅的电视台”。这种定位是相当契合美国市场的。
 
 而这种模式到中国就会水土不服。独家内容先不说过得了审过不了审，内容本来也不多。真的会有很多人就为了看四五部喜欢的美剧新订一个视频平台么？而其它版权内容则国内视频商早就有了，就算国内往往不是独家播出，至少也缺少优势。
-
-
-
