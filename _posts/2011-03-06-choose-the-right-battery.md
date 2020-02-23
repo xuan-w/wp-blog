@@ -9,8 +9,8 @@ link: >
   http://blog.wangxuan.name/2011/03/06/choose-the-right-battery/
 published: true
 tags:
-  - 电池
   - battery
+  - 电池
 categories:
   - Knowhow
 ---
