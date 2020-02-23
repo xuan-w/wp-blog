@@ -1,6 +1,7 @@
 ---
 ID: 25
-post_title: 预防封号：备用联系方式的选择
+post_title: >
+  预防封号：备用联系方式的选择
 post_name: plan-b-after-account-closed
 author: Xuan
 post_date: 2020-02-21 22:21:26
