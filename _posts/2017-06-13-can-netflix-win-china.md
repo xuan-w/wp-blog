@@ -8,7 +8,9 @@ layout: post
 link: >
   http://blog.wangxuan.name/2017/06/13/can-netflix-win-china/
 published: true
-tags: [ ]
+tags:
+  - Netflix
+  - 视频
 categories:
   - Personal Opinion
 ---
