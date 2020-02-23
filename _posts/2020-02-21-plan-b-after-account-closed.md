@@ -8,15 +8,15 @@ layout: post
 link: >
   http://blog.wangxuan.name/2020/02/21/plan-b-after-account-closed/
 published: true
-tags: 
-  - 避秦
-  - 微信
-  - 美国手机号
-  - Telegram
-  - Signal
-  - Keybase
+tags:
   - email
+  - Keybase
+  - Signal
+  - Telegram
+  - 微信
   - 电子邮箱
+  - 美国手机号
+  - 避秦
 categories:
   - Internet Freedom
   - Knowhow
