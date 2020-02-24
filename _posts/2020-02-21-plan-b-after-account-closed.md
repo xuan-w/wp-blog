@@ -22,7 +22,7 @@ categories:
   - Internet Freedom
   - Knowhow
 ---
-继续昨天的话题，今天开始掰开细讲讲昨天说的各方面。先讲最重要的好了：如何应对杀档？
+继续[昨天的话题](https://blog.wangxuan.name/2020/02/20/%e4%b8%ba%e8%87%aa%e5%b7%b1%ef%bc%8c%e4%b8%ba%e5%88%ab%e4%ba%ba%ef%bc%8c%e5%87%86%e5%a4%87%e4%b8%80%e6%9d%a1%e8%b7%af/)，今天开始掰开细讲讲昨天说的各方面。先讲最重要的好了：如何应对杀档？
 
 # 及时备份资料
 
@@ -115,3 +115,9 @@ Telegram 可能是最近人气涨得最快的聊天软件，在上面有很大�
 - 使用 Telegram 时，一定要打开两步验证。推荐使用加密聊天。Telegram 和 Signal 的注册手机号都需要注意。keybase 不要链接到自己的常用帐号
 - 推荐使用邮件加密
 - 可以考虑使用 CryptoCat 等更注重匿名的沟通工具
+
+系列文章
+
+[为自己，为别人，准备一条路](https://blog.wangxuan.name/2020/02/20/%e4%b8%ba%e8%87%aa%e5%b7%b1%ef%bc%8c%e4%b8%ba%e5%88%ab%e4%ba%ba%ef%bc%8c%e5%87%86%e5%a4%87%e4%b8%80%e6%9d%a1%e8%b7%af/)  
+[预防封号：备用联系方式的选择](https://blog.wangxuan.name/2020/02/21/plan-b-after-account-closed/)
+
