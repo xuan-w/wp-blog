@@ -5,7 +5,7 @@ post_name: '%e5%9c%a8visual-c-2010%e4%b8%ad%e4%bd%bf%e7%94%a8getopt'
 author: Xuan
 post_date: 2011-10-22 12:32:33
 layout: post
-link: 'http://blog.wangxuan.name/2011/10/22/%e5%9c%a8visual-c-2010%e4%b8%ad%e4%bd%bf%e7%94%a8getopt/'
+link: 'https://blog.wangxuan.name/2011/10/22/%e5%9c%a8visual-c-2010%e4%b8%ad%e4%bd%bf%e7%94%a8getopt/'
 published: true
 tags:
   - C++

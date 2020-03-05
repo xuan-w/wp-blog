@@ -6,7 +6,7 @@ post_name: '%e5%a6%82%e4%bd%95%e8%a7%a3%e5%86%b3windows%e4%b8%8br%e4%b8%8d%e8%83
 author: Xuan
 post_date: 2012-11-14 21:48:17
 layout: post
-link: 'http://blog.wangxuan.name/2012/11/14/%e5%a6%82%e4%bd%95%e8%a7%a3%e5%86%b3windows%e4%b8%8br%e4%b8%8d%e8%83%bd%e5%ae%89%e8%a3%85package%e7%9a%84%e9%97%ae%e9%a2%98/'
+link: 'https://blog.wangxuan.name/2012/11/14/%e5%a6%82%e4%bd%95%e8%a7%a3%e5%86%b3windows%e4%b8%8br%e4%b8%8d%e8%83%bd%e5%ae%89%e8%a3%85package%e7%9a%84%e9%97%ae%e9%a2%98/'
 published: true
 tags:
   - R

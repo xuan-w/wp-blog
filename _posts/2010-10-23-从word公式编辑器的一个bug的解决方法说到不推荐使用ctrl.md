@@ -6,7 +6,7 @@ post_name: '%e4%bb%8eword%e5%85%ac%e5%bc%8f%e7%bc%96%e8%be%91%e5%99%a8%e7%9a%84%
 author: Xuan
 post_date: 2010-10-23 10:41:45
 layout: post
-link: 'http://blog.wangxuan.name/2010/10/23/%e4%bb%8eword%e5%85%ac%e5%bc%8f%e7%bc%96%e8%be%91%e5%99%a8%e7%9a%84%e4%b8%80%e4%b8%aabug%e7%9a%84%e8%a7%a3%e5%86%b3%e6%96%b9%e6%b3%95%e8%af%b4%e5%88%b0%e4%b8%8d%e6%8e%a8%e8%8d%90%e4%bd%bf%e7%94%a8ctrl/'
+link: 'https://blog.wangxuan.name/2010/10/23/%e4%bb%8eword%e5%85%ac%e5%bc%8f%e7%bc%96%e8%be%91%e5%99%a8%e7%9a%84%e4%b8%80%e4%b8%aabug%e7%9a%84%e8%a7%a3%e5%86%b3%e6%96%b9%e6%b3%95%e8%af%b4%e5%88%b0%e4%b8%8d%e6%8e%a8%e8%8d%90%e4%bd%bf%e7%94%a8ctrl/'
 published: true
 tags:
   - Microsoft Office
