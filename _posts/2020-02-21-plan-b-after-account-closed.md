@@ -124,5 +124,6 @@ Telegram 可能是最近人气涨得最快的聊天软件，在上面有很大�
 系列文章
 
 [为自己，为别人，准备一条路](https://blog.wangxuan.name/2020/02/20/%e4%b8%ba%e8%87%aa%e5%b7%b1%ef%bc%8c%e4%b8%ba%e5%88%ab%e4%ba%ba%ef%bc%8c%e5%87%86%e5%a4%87%e4%b8%80%e6%9d%a1%e8%b7%af/)  
-[预防封号：备用联系方式的选择](https://blog.wangxuan.name/2020/02/21/plan-b-after-account-closed/)
+[预防封号：备用联系方式的选择](https://blog.wangxuan.name/2020/02/21/plan-b-after-account-closed/)  
+[告别删文：在哪里写博客？](https://blog.wangxuan.name/2020/03/04/where-to-host-my-blog/)
 
