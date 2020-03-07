@@ -92,3 +92,5 @@ categories:
     比如说 [keys.openpgp.org](https://keys.openpgp.org/) 就是一个新的试图解决滥用和隐私问题的 key directory。只有邮箱被验证之后才能发布邮箱地址，用户随时可以要求删除自己的个人信息。可惜它是一个中心化的服务，并不能防范单点故障。另外由于 GPG 团队的极低效率，目前 GPG 在导入其中无名公钥的时候仍然会报错。
 
     不过个人倾向于，[keybase.io](https://keybase.io) 才是 GPG 的未来。[keybase.io](https://keybase.io) 解决了几点：将 GPG 用于日常聊天、网盘的易用性；用 github twitter 等帐户关联用户身份，使得用户无需建立"Web of Trust"就可以在相当程度上相信身份认证的可靠性。同时，它又不是一个像SSL证书一样完全中心化的设计：[keybase.io](https://keybase.io) 虽然扮演了一个集中目录的角色，但所有的加密都由用户端完成，所有的跨站身份认证都可以由用户在不依赖 [keybase.io](https://keybase.io) 的情况下独立验证。
+    
+    我的 keybase：<https://keybase.io/wangxuan>
