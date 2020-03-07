@@ -23,8 +23,6 @@ Update in Feb 2020:
 原因：  
 R默认安装在C:\Program Files目录，安装的package也存放在C:\Program Files\R\R-2.15.1\library目录下。在Win7/Vista中，C:\Program Files目录是一个受系统保护的目录，Users组只有读取和执行的权限，没有写入权限。为了使旧程序正常运作，Windows会将尝试写入此目录的操作重定向到C:\Users\User\AppData\Local目录下。但是R不支持此重定向（反正它在尝试写入Program Files失败之后，确实问过我要不要把package放到My Documents里，成功写入到My Documents却未成功加载package，后者可能是因为——Win7对注册表也有保护，普通用户下禁止写入HKLM，而重定向到HKCU）
 
-
-
 解决方法：
 
 方法一：对于不嫌麻烦的人来说，可以每次启动R的时候都使用管理员权限，这样想干啥就干啥。可以右键R，属性-兼容性选项卡，勾选使用管理员权限运行。
