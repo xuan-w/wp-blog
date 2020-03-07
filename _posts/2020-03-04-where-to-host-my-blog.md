@@ -99,6 +99,7 @@ categories:
 
 - VPS 选购时，一般认为 KVM 和 Xen 方案的比 OpenVZ 的好
 - 使用 LNMP 或者 LAMP[^20] 一键安装包来准备 WordPress 的运行环境时，推荐使用 VPS 服务商提供的一键安装包而不是网上随便什么地方找的一键脚本。后者有可能会和系统包管理器冲突导致网站在升级后挂掉
+  - 懒人也可以使用 docker compose 部署 WordPress
 - 要注意常见的 Linux 服务器安全守则：关闭密码登录[^21]，打开防火墙，做点基本的攻击防护，经常更新系统和软件。不然你就是在裸奔
 - WordPress 也要经常更新。每年都有不少新的漏洞被发现
 - 启用 HTTPS 可以增加在 Google 结果中的权重，证书用 [certbot](https://certbot.eff.org/) 从 [Let's Encrypt](https://letsencrypt.org/) 获取就可以了
