@@ -13,8 +13,8 @@ tags:
 categories:
   - Knowhow
 ---
-getopt是UNIX和Glibc下的一个十分有用的东西。但是因为并未列入C和C++标准，所以Visual C++并不支持\#include\<getopt.h\>。 
-那么，希望使用嵌有getopt.h的源代码，或者在自己的代码中使用getopt()该怎么办呢？
+getopt是UNIX和Glibc下的一个十分有用的东西。但是因为并未列入C和C++标准，所以Visual C++并不支持`#include\<getopt.h\>`。 
+那么，希望使用嵌有getopt.h的源代码，或者在自己的代码中使用`getopt()`该怎么办呢？
 
 大致来说，你肯定需要搞到一个可以用的getopt.h和getopt.c。最常见的是GNU的实现，但使用它意味着你需要遵守GPL。所以网上也有一些其它的实现。到底使用哪个则由个人喜好决定。
 
