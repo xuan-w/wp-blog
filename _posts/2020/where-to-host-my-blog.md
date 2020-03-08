@@ -27,7 +27,7 @@ categories:
 感谢 atreides 对本文的批评和贡献。
 
 CHANGELOG:  
-Update on March 8th 2020: 增加了 netlify 和“长期可持续性”评价  
+Update on March 8th 2020: 增加了 netlify, GAE 和“长期可持续性”评价  
 Update on March 7th 2020: 增加了 docker 部署  
 Update on March 5th 2020: 接受了 atreides 的修改意见，增加了不同评价标准的横向比较评价，增加大量脚注和 Tips，重写了自建站点和静态博客两章  
 
@@ -140,6 +140,8 @@ GitHub Pages 支持普通 HTML，markdown 和 org 文件。只写 markdown 的�
 如果读者有一些钻研精神，不满足于上述中文互联网上常见的标准建站教程指示的工作流程的话，GitHub 于 2019 年推出的 [GitHub Actions](https://github.com/features/actions) 可以进一步简化上述工作。本地甚至不再需要安装站点网页生成器（以前是只有简单的 Jekyll 站不用安装，Hexo 和 Hugo 都必须自己生成网页），专心写博客，写完文章 push 上去之后 GitHub 可以替你完成后续的工作。
 
 这也算是抹平了 [GitHub Pages](https://pages.github.com/) 和 [netlify](https://www.netlify.com/) 的一个重要功能差距。[netlify](https://www.netlify.com/) 一直就可以自动替你完成网页生成的步骤，操作比 GitHub Pages 要简单一些。其免费版也提供每月 100GB 流量而并不限制站点数目，流量超出之后可以付费购买更多流量，而 GitHub Pages 是一个纯粹的福利项目不能付费升级。它同样提供全球 CDN[^5] 加速。这两年 netlify 人气上升得很快，是值得考虑的一个选择。目前大概因为它的企业用户众多且它还没有多少国内个人用户，此站还没有被墙。
+
+也有一个方案是使用 Google Apps Engine 来实现和 netlify 一样的自动构建和托管。但是由于墙的缘故，必须自己配置一下第三方 CDN 才能让大陆访问。设置也要麻烦一些。
 
 自建 VPS 当然也可以用上述 Jekyll/Hexo/Hugo 来部署静态博客。不过如前面所讨论的，相对于专业服务商来说，这样做并没有什么优点，仅供流量需求特别大的人使用。
 
