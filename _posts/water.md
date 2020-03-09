@@ -1,7 +1,7 @@
 ---
 post_title: '如何由一滴水推断出尼亚加拉大瀑布的存在'
 post_name: 'infer niagara drop water'
-post_date: '2012-02-22 09:58:17
+post_date: '2012-02-22 09:58:17'
 layout: post
 published: true
 author: Xuan
