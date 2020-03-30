@@ -1,7 +1,8 @@
 ---
 ID: 131
 post_title: >
-  使用 SyncPlay 和异地朋友一起看电影
+  使用 SyncPlay
+  和异地朋友一起看电影
 post_name: watch-movie-remotely-with-syncplay
 author: Xuan
 post_date: 2020-03-30 01:30:45
