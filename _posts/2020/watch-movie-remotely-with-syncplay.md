@@ -12,7 +12,6 @@ link: >
 published: true
 tags:
   - video playback
-  - video transcode
 categories:
   - Diary
   - Knowhow
