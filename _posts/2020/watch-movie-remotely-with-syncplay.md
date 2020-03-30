@@ -25,7 +25,7 @@ categories:
 - 对于本地文件，有两种方案
   - 一种是我们今天晚上所采用的，每个人在各自电脑上播放视频，使用软件同步播放进度。这是今天的主题
   - 一种是由一个人设置 video streaming server，其它人连上去观看。以前常用 Winamp、foobar2000 来开设或收听 [ShoutCast](https://www.shoutcast.com/) 网络电台的人对此一定不会陌生。就是在网络电台中播放视频罢了。如何使用 [VLC](https://www.videolan.org/vlc/index.html) 来开设“网络电视台”我会另文详述。[Plex](https://www.plex.tv/) 和 [Kodi](https://kodi.tv/) 也可以做到，但是这种 Media Center PC 的解决方案未兔太重型了。
-- 还有的观影 app 或者服务本身支持多人一起在线观看电影。现在还有一个叫 [微光](https://www.vlightv.com/) 的 app 还活着。倒是“虚拟电影院”类的 VR 软件颇为不少，有 VR 头显的人可以试试。
+- 还有的观影 app 或者服务本身支持多人一起在线观看电影。有些已经死了，现在有一个叫 [微光](https://www.vlightv.com/) 的 app 还活着。倒是“虚拟电影院”类的 VR 软件颇为不少，有 VR 头显的人可以试试。
 
 有一篇不错的 [英文文章](https://www.techworm.net/2020/01/watch-videos-together-with-friends.html) 总结了各种工具。其中对于中文互联网常见工具欠奉。比如说一个叫 [Coplay](https://github.com/Justineo/coplay) 的 Firefox/Chrome 插件支持常见的国内视频网站。
 
@@ -36,7 +36,7 @@ categories:
 - 将待播放的视频文件预先分发给每一个人。在海外 DropBox 的速度相当不错，国内就得另想办法了。
 - 在每个人的电脑上安装 SyncPlay （不想安装可以用绿色版）
 - 保证每个人的电脑上有至少一个 SyncPlay 支持的视频播放器，比如说 [VLC](https://www.videolan.org/vlc/index.html)、MPC、[mpv](https://mpv.io/)。没有的话需要装一个。
-- 准备一个用于连麦的平台，用电话、微信、QQ 还是 Skype、Zoom 都无所谓。就有限的体验来看，似乎跨国视频还是 Zoom 最流畅。
+- 准备一个用于连麦的平台，用电话、微信、QQ 还是 Skype、Zoom 都无所谓。就我有限的体验来看，似乎跨国视频还是 Zoom 最流畅。
 - 最后是一句废话：需要有一台能上网的电脑。但对网速没有要求
 
 作为最佳实践，在观影活动开始之前，活动的主持者需要做如下事情
@@ -60,7 +60,7 @@ categories:
     - Default room 填写活动公告给出的房间名
     - Username 可不填，推荐填写一个方便别人认出自己的名字
     - 如果已经安装了支持的播放器，Path to media player 一项应该已经自动填好。如果安装了多个播放器，选一个自己喜欢的。
-4. 点击 store configuration and run SyncPlay 按钮，会弹出一个视频播放器窗口。将准备一起看的视频文件拖入 SyncPlay 中。此时 SyncPlay 窗口右半边显示房间中已有的用户和每个用户播放器中的文件名称。请保证自己的用户名后面显示了当前视频文件的名称，而不是空白。如果不是这样，请重复第4步和第5步，可能是未关闭所有已有视频窗口。
+4. 点击 Store configuration and run SyncPlay 按钮，会弹出一个视频播放器窗口。将准备一起看的视频文件拖入该视频播放器窗口中（而不是 SyncPlay 窗口中）。此时 SyncPlay 窗口右半边显示房间中已有的用户和每个用户播放器中的文件名。请保证自己的用户名后面显示了视频文件名，而非空白。如果不是这样，请重复第4步和第5步，可能是未关闭所有已有视频窗口。
 4. 连上语音/视频聊天平台，和所有人打个招呼
 5. 人到齐之后，每个人都勾选 SyncPlay 窗口右下角的 "I'm ready to watch"。然后任意一个人点击视频播放器的播放按钮，所有人的视频就会同步开始播放。
 5. 视频开始播放后，使用音箱的观众应将自己语音聊天的麦克风关闭，以免形成回声。使用耳机的用户不需要闭麦。觉得自己这边环境太吵的人也应当主动闭麦。
