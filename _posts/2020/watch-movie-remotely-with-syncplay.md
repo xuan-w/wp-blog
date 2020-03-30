@@ -1,8 +1,7 @@
 ---
 ID: 131
 post_title: >
-  使用 SyncPlay
-  和异地朋友一起看电影
+  使用 SyncPlay 和异地朋友一起看电影
 post_name: watch-movie-remotely-with-syncplay
 author: Xuan
 post_date: 2020-03-30 01:30:45
@@ -31,11 +30,11 @@ categories:
 
 好了，开始正题。[SyncPlay](https://syncplay.pl/) 是一个跨平台的用于同步各自电脑上视频播放进度的开源软件。支持 Windows Mac Linux \*BSD。
 
-使用 SyncPlay 来一起看电影的话，需要如下条件。如果不能满足的话，换别的方法看电影吧
+使用 [SyncPlay](https://syncplay.pl/) 来一起看电影的话，需要如下条件。如果不能满足的话，换别的方法看电影吧
 
 - 将待播放的视频文件预先分发给每一个人。在海外 DropBox 的速度相当不错，国内就得另想办法了。
-- 在每个人的电脑上安装 SyncPlay （不想安装可以用绿色版）
-- 保证每个人的电脑上有至少一个 SyncPlay 支持的视频播放器，比如说 [VLC](https://www.videolan.org/vlc/index.html)、MPC、[mpv](https://mpv.io/)。没有的话需要装一个。
+- 在每个人的电脑上安装 [SyncPlay](https://syncplay.pl/) （不想安装可以用绿色版）
+- 保证每个人的电脑上有至少一个 [SyncPlay](https://syncplay.pl/) 支持的视频播放器，比如说 [VLC](https://www.videolan.org/vlc/index.html)、MPC、[mpv](https://mpv.io/)。没有的话需要装一个。
 - 准备一个用于连麦的平台，用电话、微信、QQ 还是 Skype、Zoom 都无所谓。就我有限的体验来看，似乎跨国视频还是 Zoom 最流畅。
 - 最后是一句废话：需要有一台能上网的电脑。但对网速没有要求
 
@@ -46,7 +45,7 @@ categories:
 - 在公告板上列出如下信息
   - 放映活动的时间
   - 视频文件的下载地址
-  - SyncPlay 的服务器地址和房间名称。如果不打算自建服务器的话，可以使用 SyncPlay 官方提供的四个服务器地址。需要详细到端口号，不同端口是不同的服务器。房间名称可由活动组织者指定任意字词，只要大家都在一个服务器上的一个房间即可同步
+  - [SyncPlay](https://syncplay.pl/) 的服务器地址和房间名称。如果不打算自建服务器的话，可以使用 [SyncPlay](https://syncplay.pl/) 官方提供的四个服务器地址。需要详细到端口号，不同端口是不同的服务器。房间名称可由活动组织者指定任意字词，只要大家都在一个服务器上的一个房间即可同步
   - 连麦所用的平台和加入的方法。比如说使用 Zoom 的话可贴出 Zoom 链接
 - 其它步骤与普通参与者相同
 
@@ -54,7 +53,7 @@ categories:
 
 1. 查看组织者所发布的活动公告，并下载视频文件
 1. 如果希望自己稍晚些到时别人等一下自己，可在公告板上留下自己的名字
-2. 安装 SyncPlay 和一个 SyncPlay 所支持的视频播放器。如已安装可跳过此步
+2. 安装 [SyncPlay](https://syncplay.pl/) 和一个 [SyncPlay](https://syncplay.pl/) 所支持的视频播放器。如已安装可跳过此步
 3. 在活动开始前几分钟，关闭电脑上的其它视频播放器窗口，打开 SyncPlay，在其界面中依次填写下列各项
     - Server address 填写活动公告给出的服务器地址
     - Default room 填写活动公告给出的房间名
@@ -71,7 +70,7 @@ categories:
   
 观影活动结束后，建议主持者删除网盘上的视频文件，以保护自身隐私。
 
-总体来说，SyncPlay 这套方案优点很多
+总体来说，[SyncPlay](https://syncplay.pl/) 这套方案优点很多
 
 - 完美的跨平台支持，所有人都可以用
 - 对网络条件要求很低
@@ -82,6 +81,6 @@ categories:
 但也有一些缺点
 
 - 每个人都需要下载视频文件。这并不方便，也不总是可行。
-- 需要安装 SyncPlay，略麻烦了一点
+- 需要安装 [SyncPlay](https://syncplay.pl/)，略麻烦了一点
 - 连麦的时候使用音箱观影的人大部分时候需要闭麦
 - 弹幕功能仅支持 mpv 播放器，所以主要还是和语音连麦搭配使用
