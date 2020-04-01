@@ -104,4 +104,5 @@ categories:
 
 **和朋友一起看电影系列**
 
-[使用 SyncPlay 和异地朋友一起看电影](https://blog.wangxuan.name/2020/03/30/watch-movie-remotely-with-syncplay/)
+[使用 SyncPlay 和异地朋友一起看电影](https://blog.wangxuan.name/2020/03/30/watch-movie-remotely-with-syncplay/)  
+[使用 VLC 举办在线观影活动](https://blog.wangxuan.name/2020/03/31/how-to-use-vlc-stream-video/)
