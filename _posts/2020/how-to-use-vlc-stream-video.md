@@ -13,8 +13,8 @@ tags:
   - video transcode
 categories:
   - Diary
-  - Knowhow
   - Fiddling
+  - Knowhow
 ---
 [上一篇](https://blog.wangxuan.name/2020/03/30/watch-movie-remotely-with-syncplay/) 讲了使用 SyncPlay 和朋友一起看电影的办法。这篇讲一讲使用 [VLC](https://www.videolan.org/vlc/index.html) 串流播放电影的办法。
 
