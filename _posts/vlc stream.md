@@ -1,7 +1,7 @@
 ---
 post_title: '使用 VLC 举办在线观影活动'
 post_name: 'how to use VLC stream video'
-post_date: '2020-03-30 15:23:04
+post_date: '2020-03-31 23:25:04'
 layout: post
 published: true
 author: Xuan
