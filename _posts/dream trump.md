@@ -1,7 +1,7 @@
 ---
 post_title: '梦中梦一则'
 post_name: 'dream of trump death'
-post_date: '2020-04-02 14:01:38
+post_date: '2020-04-02 14:01:38'
 layout: post
 published: true
 author: Xuan
