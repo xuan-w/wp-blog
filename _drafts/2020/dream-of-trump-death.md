@@ -6,7 +6,7 @@ author: Xuan
 post_date: 2020-04-02 14:01:38
 layout: post
 link: https://blog.wangxuan.name/?p=158
-published: false
+published: true
 tags:
   - coronavirus
   - dream
