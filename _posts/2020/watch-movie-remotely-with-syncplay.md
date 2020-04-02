@@ -61,7 +61,7 @@ categories:
     - Default room 填写活动公告给出的房间名
     - Username 可不填，推荐填写一个方便别人认出自己的名字
     - 如果已经安装了支持的播放器，"Path to media player" 一项应该已经自动填好。如果安装了多个播放器，选一个自己喜欢的。  
-   ![SyncPlay start](https://blog.wangxuan.name/wp-content/uploads/2020/04/SyncPlay-ready.png)
+   ![SyncPlay start](https://blog.wangxuan.name/wp-content/uploads/2020/04/SyncPlay-start.png)
 4. 点击 "Store configuration and run SyncPlay" 按钮，会弹出一个视频播放器窗口。将准备一起看的视频文件拖入该视频播放器窗口中（而不是 SyncPlay 窗口中）。此时 SyncPlay 窗口右半边显示房间中已有的用户和每个用户播放器中的文件名。请保证自己的用户名后面显示了视频文件名，而非空白。如果不是这样，请重复第4步和第5步，可能是未关闭所有已有视频窗口。  
    ![SyncPlay ready](https://blog.wangxuan.name/wp-content/uploads/2020/04/SyncPlay-ready.png)
 4. 连上语音/视频聊天平台，和所有人打个招呼
