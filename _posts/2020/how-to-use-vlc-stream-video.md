@@ -94,6 +94,8 @@ categories:
 
 特别需要指出的是，很多时候音频流不仅要看编码，也要看采样率。至少，在很多时候对于来自光盘的 DTS 和 AC3 音轨，使用默认的 44.1kHz 采样率无法正确编解码，需要改为 48kHz 才能让观众正常收听。
 
+![VLC 48k sampling rate](../../images/VLC-48k.png)
+
 视频编码推荐 H264，因为兼容性良好而且相对于 H265 更节省 CPU。如果自信自己的机器性能非常强大，所有观众的播放软件都足够新，可以使用 H265 编码以节约网络带宽。但该 GUI 界面并不能指定使用多少线程进行编码，如有必要用到 CPU 的全部能力，需要在命令行中指定线程数，参见官方[帮助](https://wiki.videolan.org/Documentation:Streaming_HowTo/Advanced_Streaming_Using_the_Command_Line/#threads)和[示例](https://wiki.videolan.org/Documentation:Streaming_HowTo/Command_Line_Examples/#More_complex_transcoding_example)。  
 视频码率可以不填，VLC 会自动选择一个画质损失不大的码率。视频质量之类的参数不必深究，VLC 使用 [FFmpeg](https://www.ffmpeg.org/) 进行编解码，若需要全面了解其参数选项建议研读 FFmpeg 的帮助。
 
