@@ -31,9 +31,12 @@ categories:
 基本操作网上图文教程很多，就不写太细了。
 
 1. 启动 VLC 之后，Media 菜单选择 Stream，弹出 Open Media 对话框，按 Add 按钮添加需要播放的视频文件。如果电影文件不止一个，可以依次添加。然后按 Stream 按钮开始串流设置向导。
-2. 点 Next，出现协议选择对话框。一般选择 HTTP 协议，然后点击 add 按钮。端口和路径可以使用默认值，也可以自行修改。
-3. 下一步是转码设置。可以选择转码或者不转码。这是最容易掉坑的地方，下文详细讨论。一般来说，如果收看的人网络条件都不错，不想占用 CPU 的话就不要转码。
-4. 最后确认所有参数并点击 stream 按钮，VLC 会开始播放视频，但是窗口是黑色的。此时可以在另一个 VLC 或者其它播放器中打开 `http://IP地址:端口号` 来访问以验证服务是否启动成功。将此地址分享给朋友之后，朋友就可以在视频播放器上使用此地址观看视频
+2. 点 Next，出现协议选择对话框。一般选择 HTTP 协议，然后点击 add 按钮。端口和路径可以使用默认值，也可以自行修改。  
+![step 2](https://blog.wangxuan.name/wp-content/uploads/2020/04/VLC-step2.png)
+3. 下一步是转码设置。可以选择转码或者不转码。这是最容易掉坑的地方，下文详细讨论。一般来说，如果收看的人网络条件都不错，不想占用 CPU 的话就不要转码。  
+![step 3](https://blog.wangxuan.name/wp-content/uploads/2020/04/VLC-step3.png)
+4. 最后确认所有参数并点击 stream 按钮，VLC 会开始播放视频，但是窗口是黑色的。此时可以在另一个 VLC 或者其它播放器中打开 `http://IP地址:端口号` 来访问以验证服务是否启动成功。将此地址分享给朋友之后，朋友就可以在视频播放器上使用此地址观看视频  
+![step 4](https://blog.wangxuan.name/wp-content/uploads/2020/04/VLC-step4.png)
 5. 在播放时，只有主持人可以拖拉进度条、播放和暂停。其它人只能选择看或者不看。需要一起语音聊天讨论剧情的话，另外开一个语音聊天软件就可以。
 
 也可以通过命令行的方式来启动服务，复制第4步中显示的命令行参数并保存，即可在下次使用命令行直接启动服务。命令行大致形如： `vlc 文件名 转码输出参数`
@@ -54,6 +57,7 @@ categories:
    如果运行服务的电脑在路由器后面，播放视频的朋友不在同一个网段，就得配置端口转发。当然如果就是在自己家里播放，自己家里收看，无须做端口转发。  
    登入路由器的管理界面之后，设置一条端口转发规则，将一个对外的 TCP 端口A转发到自己开设服务的电脑上 VLC 所侦听的端口B。B端口就是第2步所设置的端口，默认是 8080。  
    填写端口转发规则时，对外端口可以随便填，推荐大于 1024，但是不能大于 65535。转发的目标 IP 如前一问所述，可以通过 `ipconfig` 或者 `ip` 命令查看。  
+![port forward](https://blog.wangxuan.name/wp-content/uploads/2020/04/VLC-port-forward.png)  
    在和人分享播放地址时，IP地址要填写自己路由器的公网地址（可以通过访问各种显示当前 IP 的网站来查看自己的 IP。比如说直接在 Google 里搜索 "My IP address"，Google 就会告诉你。），端口号要填写被转发的端口A，而不要填写端口B。
 
 3. 什么时候需要转码？
@@ -71,6 +75,7 @@ categories:
 
    原则上可以。在第3步转码选项中有字幕选项。字幕有软硬两种（英文说法是 Closed Caption 和 Open Caption）。软字幕指的是播放者可以自行决定字幕开关，而硬字幕是直接修改了视频画面。  
    软字幕有两种格式选择，硬字幕选项通过勾选 "Overlay subtitles on the video" 实现。  
+   ![subtitles option](https://blog.wangxuan.name/wp-content/uploads/2020/04/VLC-subtitle.png)  
    我没发现任何一种软字幕选项可以在 VLC 客户端播放，可能有些格式可以在智能电视上播放，但我没有测试。  
    如上述，VLC 支持在转码的同时将字幕硬压到视频流中。如果要这样做的话，必须选择对视频进行转码。硬压的字幕只有主持人可以选择字幕，其它人只能接受主持人选择的字幕。主持人在播放时正常在窗口中右键选择字幕即可。
    
@@ -78,7 +83,8 @@ categories:
 
    实时监视播放效果是必须的。不然岂不是只给别人放电影，自己只能盯着黑屏幕，比电影放映员还惨。  
    有两个办法。一个是第4步提到的，再开一个 VLC 窗口，填上播放地址之后进行收看。优点是可以确保自己看到的效果和其它观众看到的效果一模一样。缺点是设置不当的话会占用自己的网络带宽，可以同时支持的观众数目减一。  
-   另一个办法是在第2步添加 HTTP 协议的时候，勾选 "Display locally"。优点是不会占用网络带宽，缺点是体会不到其它观众的延迟（扶额，这也许不是缺点，只是不能与民同乐）。此外有时会有不明故障，明明别人都可以正常收看，自己却无法看到图像。
+   另一个办法是在第2步添加 HTTP 协议的时候，勾选 "Display locally"。优点是不会占用网络带宽，缺点是体会不到其它观众的延迟（扶额，这也许不是缺点，只是不能与民同乐）。此外有时会有不明故障，明明别人都可以正常收看，自己却无法看到图像。  
+![display locally](https://blog.wangxuan.name/wp-content/uploads/2020/04/VLC-local.png)  
    
 # 几个特殊问题
 
@@ -94,7 +100,7 @@ categories:
 
 特别需要指出的是，很多时候音频流不仅要看编码，也要看采样率。至少，在很多时候对于来自光盘的 DTS 和 AC3 音轨，使用默认的 44.1kHz 采样率无法正确编解码，需要改为 48kHz 才能让观众正常收听。
 
-![VLC 48k sampling rate](../../images/VLC-48k.png)
+![VLC 48k sampling rate](https://blog.wangxuan.name/wp-content/uploads/2020/04/VLC-48k.png)
 
 视频编码推荐 H264，因为兼容性良好而且相对于 H265 更节省 CPU。如果自信自己的机器性能非常强大，所有观众的播放软件都足够新，可以使用 H265 编码以节约网络带宽。但该 GUI 界面并不能指定使用多少线程进行编码，如有必要用到 CPU 的全部能力，需要在命令行中指定线程数，参见官方[帮助](https://wiki.videolan.org/Documentation:Streaming_HowTo/Advanced_Streaming_Using_the_Command_Line/#threads)和[示例](https://wiki.videolan.org/Documentation:Streaming_HowTo/Command_Line_Examples/#More_complex_transcoding_example)。  
 视频码率可以不填，VLC 会自动选择一个画质损失不大的码率。视频质量之类的参数不必深究，VLC 使用 [FFmpeg](https://www.ffmpeg.org/) 进行编解码，若需要全面了解其参数选项建议研读 FFmpeg 的帮助。
