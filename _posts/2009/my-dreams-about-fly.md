@@ -10,6 +10,7 @@ link: >
 published: true
 tags:
   - 梦
+  - dream
 categories:
   - Daily Life
   - Diary

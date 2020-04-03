@@ -12,6 +12,7 @@ tags:
   - coronavirus
   - dream
   - 新冠病毒
+  - 梦
 categories:
   - Diary
 ---
