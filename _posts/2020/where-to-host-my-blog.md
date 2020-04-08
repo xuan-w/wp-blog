@@ -27,6 +27,7 @@ categories:
 感谢 atreides 对本文的批评和贡献。
 
 CHANGELOG:  
+Update on April 8th 2020: 增加了“广告收入”评价，补充了托管型 VPS
 Update on March 8th 2020: 增加了 netlify, GAE 和“长期可持续性”评价  
 Update on March 7th 2020: 增加了 docker 部署  
 Update on March 5th 2020: 接受了 atreides 的修改意见，增加了不同评价标准的横向比较评价，增加大量脚注和 Tips，重写了自建站点和静态博客两章  
@@ -84,7 +85,7 @@ Update on March 5th 2020: 接受了 atreides 的修改意见，增加了不同�
 | 费用     | 60美元/年  |
 | 访问性能 | 一般或较差 |
 
-自建 WordPress+VPS 站点原本是需要一些 Linux、HTTP 服务器、MySQL 和 php 设置的知识的（如果不需要自己高度定制的话，并不需要学习 php）。但是现在各种一键安装包很多、照着教程一路搞下去还是很容易的。只是没有相关知识的话进行一些设置的时候可能会找半天不知道问题在哪里。
+自建 WordPress+VPS 站点原本是需要一些 Linux、HTTP 服务器、MySQL 和 php 设置的知识的（如果不需要自己高度定制的话，并不需要学习 php）。但是现在各种一键安装包很多、照着教程一路搞下去还是很容易的。只是没有相关知识的话进行一些设置的时候可能会找半天不知道问题在哪里。然而现在有一类托管型 VPS[^23]可以让 VPS 也不那么折腾。读者可参见[WP叔叔](https://wpshushu.com/#hosting)的[这篇文章](https://wpshushu.com/#hosting)中的介绍。
 
 价格的话，一线 VPS 服务商如 [Linode](https://www.linode.com/?r=89af509799ad01b9cfe15b7eac6bedc95848f089)、[DigitalOcean](https://m.do.co/c/b72fab7c3182)、[Vultr](https://www.vultr.com/) 等的最低配服务器基本都是5美元每月。对于一个流量不大的个人网站来说绰绰有余。在这几个自主博客方案中算是比较贵的方案了。
 
@@ -106,6 +107,7 @@ Update on March 5th 2020: 接受了 atreides 的修改意见，增加了不同�
   - 懒人也可以使用 docker compose 部署 WordPress
 - 要注意常见的 Linux 服务器安全守则：关闭密码登录[^21]，打开防火墙，做点基本的攻击防护，经常更新系统和软件。不然你就是在裸奔
 - WordPress 也要经常更新。每年都有不少新的漏洞被发现
+- 不想折腾以上东西又想要 VPS 的性能或者可玩潜力，那么就用托管型 VPS[^23]吧
 - 启用 HTTPS 可以增加在 Google 结果中的权重，证书用 [certbot](https://certbot.eff.org/) 从 [Let's Encrypt](https://letsencrypt.org/) 获取就可以了
 - 手机友好的页面在 Google 结果中更靠前。所以不要用太老旧的主题。若是能打开 [AMP](https://wordpress.org/plugins/amp/) 尤妙
 
@@ -234,6 +236,11 @@ WordPress 拥有最多的社区资源，最丰富的主题和插件。即使要�
 
 除去旨在使网站下线的 DDoS[^4] 外，自建服务器还要当心各种以控制服务器为目的的常规攻击。去后台看一下的话，每天几千次试密码是稀松平常的事情。不做基本防护而成为肉鸡[^11]或者被挂马[^12]的个人网站很多很多。
 
+### 广告收入
+
+对于本文所列举的各种开博客方法，大部分只需要自己有域名就可以放广告。Google AdSense 之类的广告方案要求拥有根域名，这也是自有域名的一个重要好处。如果自己没有域名而需要使用博客托管商的域名的话，Blogspot 因为是 Google 自家的，可以直接开通 AdSense。而其它平台往往需要付费才能控制自己页面上的广告。值得一提的是，WordPress.com 即使是付了钱，绑定了自己的域名，似乎也只能使用它自家的 WordAds 平台来放广告。
+
+
 ### 总结
 
 下表对于有代表性的自主博客方案做了一个汇总。不大推荐的方案没有列入，详见前述章节的讨论。
@@ -251,6 +258,7 @@ WordPress 拥有最多的社区资源，最丰富的主题和插件。即使要�
 | 并发承载[^19] | 差            | 很好                    | 好            | 好           | 好       | 很好             |
 | 文件限制      | 20GB起        | 1GB                     | 6GB           | 15GB起       | 1GB起    | 20GB起           |
 | 安全防御      | 差            | 较好                    | 好            | 很好         | 一般     | 一般             |
+| 广告收入      | 可自设        | 可自设                  | 付费，WordAds | AdSense      | 可自设   | 可自设           |
 
 综上，如果你的主要读者都在境外，选 Blogger/WordPress.com。不想掏钱就用 Blogger。否则用 WordPress.com。想折腾的话也可以用别的方案。
 
@@ -305,3 +313,5 @@ WordPress 拥有最多的社区资源，最丰富的主题和插件。即使要�
 [^21]: 也就是只允许 SSH pubkey 登录。这样可以降低密码被试出的风险。如果觉得不方便的话，至少要禁止 root 用户远程登录。也可以安装 fail2ban 以减少密码被试出的机会。
 
 [^22]: cPanel 是一种常见的虚拟主机管理界面。在上面可以方便地一键部署 WordPress，上传文件什么的。
+
+[^23]: 托管型 VPS，就是你买了 VPS，但是运维工作由别人（比如说某个非常好用的工具）代理。对于不想折腾，不想碰命令行的人，这是一个好选择。当然，给你维护网站的工具是要收钱的。详细介绍见[这里](https://wpshushu.com/#hosting)
