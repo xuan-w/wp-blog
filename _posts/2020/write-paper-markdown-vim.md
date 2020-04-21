@@ -24,7 +24,7 @@ categories:
 
 本文虽然主体已经完工，但可能不定期修改，以方便读者理解。如果觉得本文有用，欢迎收藏，并在写论文时回来看看有没有更新。
 
-如有难以理解的部分，欢迎留言或者发 Pull Request。
+如有难以理解的部分，欢迎留言或者对[此文件](https://github.com/xuan-w/wp-blog/blob/master/_posts/2020/write-paper-markdown-vim.md)发 Pull Request。
 
 下面是几个使用示例截屏：
 
@@ -202,6 +202,8 @@ VIM 的 python 支持安装起来非常麻烦。因为必须和编译 VIM 时所
 
 # 附录
 
+对于以下附录，如果需要代码高亮的话，可查看 [GitHub 版本](https://github.com/xuan-w/wp-blog/blob/master/_posts/2020/write-paper-markdown-vim.md#%E9%99%84%E5%BD%95)
+
 ## 我的 vimrc 中相关设置
 
 下面是我的 vimrc。vimrc 文件中双引号 `"` 起头的是注释
@@ -267,8 +269,8 @@ WINDOWS=1
 # command to open pdf. If it is running, don't open again. Please change path
 OPEN_PDF=powershell -c "if(-Not(Get-Process -Name SumatraPDF -ErrorAction SilentlyContinue)){ start C:\abc\def\SumatraPDF\SumatraPDF.exe $(DOCNAME).pdf}"
 
-# command to open pdf in Linux
-# OPEN_PDF=if pgrep "pdf" &gt;/dev/null; then pdfviewer $(DOCNAME).pdf&amp;; fi
+# command to open pdf in Linux. If it is running, don't open again.
+# OPEN_PDF=if pgrep "pdf" >/dev/null; then pdfviewer $(DOCNAME).pdf&; fi
 
 # location of bib file. Please change path
 GLOBAL_BIBFILE=C:\abc\def\BetterBib.bib
