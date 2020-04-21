@@ -1,17 +1,19 @@
 ---
-post_title: '助听器感受'
-post_name: 'experience with oticon delta 6000'
-post_date: '2008-07-13 23:12:52'
-layout: post
-published: true
+ID: 201
+post_title: 助听器感受
+post_name: experience-with-oticon-delta-6000
 author: Xuan
-tags: 
+post_date: 2008-07-13 23:12:52
+layout: post
+link: >
+  https://blog.wangxuan.name/2008/07/13/experience-with-oticon-delta-6000/
+published: true
+tags:
   - hearing aids
 categories:
   - Dairy
   - Shopping
 ---
-
 这是2008年拿到 Oticon Delta 6000 之后的最初体验——2020年4月记
 
 以下为原文
