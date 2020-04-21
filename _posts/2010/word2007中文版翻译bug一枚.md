@@ -9,6 +9,8 @@ link: 'https://blog.wangxuan.name/2010/06/03/word2007%e4%b8%ad%e6%96%87%e7%89%88
 published: true
 tags:
   - Microsoft Word
+  - Word Processing
+  - 文字处理
 categories:
   - Knowhow
 ---
