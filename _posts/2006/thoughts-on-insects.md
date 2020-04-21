@@ -11,6 +11,7 @@ published: true
 tags: [ ]
 categories:
   - Personal Opinion
+  - Amusement
 ---
 这是一篇高二时写的博文，现在看来，无论是无病呻吟还是乱掉书袋都令我脸红。不过，谁没中二过呢？就这样留着吧。想想高中写过的那些八股文作文，也许这篇还不算最尴尬的——2020年4月记
 
