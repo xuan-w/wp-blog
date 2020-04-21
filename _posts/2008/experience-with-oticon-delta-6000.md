@@ -11,7 +11,7 @@ published: true
 tags:
   - hearing aids
 categories:
-  - Dairy
+  - Diary
   - Shopping
 ---
 这是2008年拿到 Oticon Delta 6000 之后的最初体验——2020年4月记
