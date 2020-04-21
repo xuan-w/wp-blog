@@ -15,6 +15,7 @@ tags:
 categories:
   - Fiddling
   - Personal Opinion
+  - Writing Tools
 ---
 在强迫自己用VIM写了三篇 paper 之后，我觉得我的 VIM 终于可以出师了。现在开始了 Emacs 的折腾之路。  
 这其间有几点感触
