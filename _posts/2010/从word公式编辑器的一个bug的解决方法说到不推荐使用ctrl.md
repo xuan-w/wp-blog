@@ -11,6 +11,8 @@ published: true
 tags:
   - Microsoft Office
   - Microsoft Word
+  - Word Processing
+  - 文字处理
 categories:
   - Knowhow
 ---
