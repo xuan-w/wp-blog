@@ -12,6 +12,7 @@ tags:
   - DRM
   - Kindle
 categories:
+  - Digital
   - Internet Freedom
   - Personal Opinion
 ---
