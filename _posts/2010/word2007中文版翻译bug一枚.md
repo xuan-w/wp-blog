@@ -13,6 +13,7 @@ tags:
   - 文字处理
 categories:
   - Knowhow
+  - Writing Tools
 ---
 波浪线下面一个等号，这个符号转义符是`\cong`，即 congruence 的简写，也就是说这是全等号
 
