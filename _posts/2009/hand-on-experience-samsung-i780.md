@@ -12,7 +12,6 @@ tags:
   - smartphone
   - 智能手机
 categories:
-  - Diary
   - Fiddling
   - Shopping
 ---
