@@ -11,6 +11,7 @@ published: true
 tags:
   - computer
 categories:
+  - Facts
   - Knowhow
   - Shopping
 ---
