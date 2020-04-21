@@ -264,8 +264,8 @@ Makefile 文件中 `#` 开头的一行是注释
 # Here we set a variable to indicate we are using Windows
 WINDOWS=1
 
-# command to open pdf. If it is running ,don't open again. Please change path
-OPEN_PDF=powershell -c &quot;if(-Not(Get-Process -Name SumatraPDF -ErrorAction SilentlyContinue)){ start C:\abc\def\SumatraPDF\SumatraPDF.exe $(DOCNAME).pdf}&quot;
+# command to open pdf. If it is running, don't open again. Please change path
+OPEN_PDF=powershell -c "if(-Not(Get-Process -Name SumatraPDF -ErrorAction SilentlyContinue)){ start C:\abc\def\SumatraPDF\SumatraPDF.exe $(DOCNAME).pdf}"
 
 # command to open pdf in Linux
 # OPEN_PDF=if pgrep &quot;pdf&quot; &gt;/dev/null; then pdfviewer $(DOCNAME).pdf&amp;; fi
