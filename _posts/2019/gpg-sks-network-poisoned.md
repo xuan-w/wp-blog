@@ -15,6 +15,7 @@ tags:
   - Keybase
   - 加密
 categories:
+  - Facts
   - Internet Freedom
   - Knowhow
   - Personal Opinion
