@@ -11,6 +11,8 @@ link: >
 published: true
 tags: [ ]
 categories:
+  - Amusement
+  - My Work
   - Personal Opinion
 ---
 如何由一滴水推断出尼亚加拉大瀑布的存在
