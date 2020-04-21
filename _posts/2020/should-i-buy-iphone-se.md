@@ -10,6 +10,8 @@ link: >
 published: true
 tags:
   - iPhone
+  - smartphone
+  - 智能手机
 categories:
   - Daily Life
   - Shopping
