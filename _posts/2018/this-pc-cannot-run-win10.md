@@ -13,6 +13,7 @@ tags:
 categories:
   - Amusement
   - Diary
+  - Digital
 ---
 嗯，一台已经安装了 Windows 10 的电脑告诉我，Windows 10 不能安装在这台电脑上。
 
