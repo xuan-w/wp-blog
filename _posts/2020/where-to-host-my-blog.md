@@ -17,6 +17,7 @@ tags:
   - 避秦
   - 静态博客
 categories:
+  - Digital
   - Internet Freedom
   - Knowhow
 ---
