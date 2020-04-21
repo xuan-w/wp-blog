@@ -13,6 +13,7 @@ tags:
   - video transcode
 categories:
   - Diary
+  - Digital
   - Fiddling
   - Knowhow
 ---
