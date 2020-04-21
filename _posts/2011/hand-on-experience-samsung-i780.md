@@ -9,6 +9,7 @@ link: >
   https://blog.wangxuan.name/2011/03/16/hand-on-experience-samsung-i780/
 published: true
 tags:
+  - smartphone
   - 智能手机
 categories:
   - Diary
