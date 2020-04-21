@@ -12,6 +12,7 @@ tags:
   - Word Processing
   - 文字处理
 categories:
+  - Facts
   - Knowhow
   - Writing Tools
 ---
