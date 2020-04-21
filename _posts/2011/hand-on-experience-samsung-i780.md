@@ -3,7 +3,7 @@ ID: 205
 post_title: I780使用手记
 post_name: hand-on-experience-samsung-i780
 author: Xuan
-post_date: 2011-03-16 15:33:26
+post_date: 2009-08-31 18:32:10
 layout: post
 link: >
   https://blog.wangxuan.name/2011/03/16/hand-on-experience-samsung-i780/
