@@ -19,6 +19,7 @@ tags:
   - 美国手机号
   - 避秦
 categories:
+  - Digital
   - Internet Freedom
   - Knowhow
 ---

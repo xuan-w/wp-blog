@@ -12,6 +12,7 @@ tags:
   - battery
   - 电池
 categories:
+  - Digital
   - Facts
   - Knowhow
   - Shopping

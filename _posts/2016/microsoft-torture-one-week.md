@@ -14,6 +14,7 @@ tags:
 categories:
   - Daily Life
   - Diary
+  - Digital
 ---
 这短短一周遇到的微软糟心事：
 

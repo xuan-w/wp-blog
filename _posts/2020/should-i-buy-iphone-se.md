@@ -13,7 +13,7 @@ tags:
   - smartphone
   - 智能手机
 categories:
-  - Daily Life
+  - Digital
   - Shopping
 ---
 # 问题分析
