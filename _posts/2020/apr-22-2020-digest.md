@@ -47,7 +47,7 @@ categories:
 
 考据文一篇 [爱因斯坦与《自然辩证法》](https://blog.wangxuan.name/2011/09/28/einstein-dialectics-of-nature/)  
 
-关于“自然辩证法”，读者可以搜索一篇有趣的小文“辩证法与放屁”，初中时只晓得《矛盾论》非要说正电负电荷是矛盾肯定是不对的我对此文万分佩服。
+关于“自然辩证法”，读者可以搜索一篇有趣的小文“辩证法与放屁”，初中时只晓得《矛盾论》非要说正电荷负电荷是矛盾肯定是不对的我对此文万分佩服。
 
 几篇生活、学习经验短文  
 [锻炼后肌肉酸痛的原因与规避方法](https://blog.wangxuan.name/2015/05/31/muscle-pain-after-physical-training/)  
