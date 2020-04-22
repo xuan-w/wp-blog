@@ -12,6 +12,7 @@ tags:
   - 微信
   - 避秦
 categories:
+  - Diary
   - Digest
 ---
 一如既往，这个不定期 digest 主要包含在 RSS 中无法推送的博文更新，和不值当单独写一篇博文的零碎东西。
