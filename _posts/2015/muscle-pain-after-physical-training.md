@@ -1,7 +1,7 @@
 ---
 ID: 227
 post_title: >
-  锻炼后的肌肉酸痛的原因与规避方法
+  锻炼后肌肉酸痛的原因与规避方法
 post_name: muscle-pain-after-physical-training
 author: Xuan
 post_date: 2015-05-31 09:08:43
