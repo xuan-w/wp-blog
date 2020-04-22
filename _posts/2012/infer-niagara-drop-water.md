@@ -17,8 +17,9 @@ categories:
 ---
 如何由一滴水推断出尼亚加拉大瀑布的存在
 
-福尔摩斯有句名言：一个逻辑学家能凭一滴水推测出大西洋或尼亚加拉大瀑布的存在，即使他并没亲眼见过。  
-From a drop of water a logician could infer the possibility of an Atlantic or a Niagara without having seen or heard of one or the other.
+福尔摩斯有句名言
+> 一个逻辑学家能凭一滴水推测出大西洋或尼亚加拉大瀑布的存在，即使他并没亲眼见过。  
+> From a drop of water a logician could infer the possibility of an Atlantic or a Niagara without having seen or heard of one or the other.
 
 这是一个有趣的题目。
 
