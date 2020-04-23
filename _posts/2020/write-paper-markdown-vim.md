@@ -211,7 +211,7 @@ VIM 的 python 支持安装起来非常麻烦。因为必须和编译 VIM 时所
 
 下面是我的 vimrc。vimrc 文件中双引号 `"` 起头的是注释
 
-~~~vim
+```vim
 " 设置中文折行显示和 gq J 时不加空格, 其中 M 在新版 VIM 中已经默认有了
 set formatoptions+=mM
 
@@ -255,7 +255,7 @@ au filetype pandoc au BufWritePost *.md :mks! |:AsyncRun make
 au filetype pandoc
     \ let g:pandoc#biblio#bibs = ['C:\abc\efg\BetterBib.bib']
 
-~~~
+```
 
 ## 我的 Makefile
 
@@ -265,7 +265,7 @@ au filetype pandoc
 
 Makefile 文件中 `#` 开头的一行是注释
 
-~~~make
+```make
 # Here we set a variable to indicate we are using Windows
 WINDOWS=1
 
@@ -322,14 +322,14 @@ HTML_TEMPLATE=$(STYLEDIR)/template.html
 REF_STYLE=$(STYLEDIR)/ref_format.csl
 BEAMER_HEAD=$(STYLEDIR)/preamble_beamer.tex
 
-~~~
+```
 
 定义几个文档文件名（具体来说，可能会有海报、文章、报告等）
 
-~~~make
+```make
 DOCNAME=paper_name
 DOCNAME2=slides_name
-~~~
+```
 
 ### 文章 PDF 输出
 
@@ -337,7 +337,7 @@ DOCNAME2=slides_name
 
 在这些指定了，如果 markdown 源文档、Makefile 本身、各种模板文件、图片附件目录产生改变的话，就重新编译文档。
 
-~~~make
+```make
 $(DOCNAME).pdf: $(DOCNAME).md makefile make/target.mk \
        $(STYLEDIR) $(TEX_HEAD) $(TEX_TEMPLATE) $(REF_STYLE) \
        $(IMAGEDIR)
@@ -351,13 +351,13 @@ $(DOCNAME).pdf: $(DOCNAME).md makefile make/target.mk \
 		--csl="$(REF_STYLE)" \
 		--pdf-engine=xelatex \
 		--verbose
-~~~
+```
 
 ### 文章 tex 输出
 
 这里我定义了两个 tex 输出，一个是完整版，可以用 latexmk 编译生成 PDF，一个是只包含文档主体，没有套用任何模板的 tex 文件，方便手工套用其它 LaTeX 模板。
 
-~~~make
+```make
 $(DOCNAME).tex: $(DOCNAME).md makefile make/target.mk 
 	$(OS_OPTION)
 	$(PANDOC) $(DOCNAME).md \
@@ -379,13 +379,13 @@ $(DOCNAME)_full.tex: $(DOCNAME).md makefile make/target.mk \
 		--csl="$(REF_STYLE)" \
 		--pdf-engine=xelatex \
 		--verbose
-~~~
+```
 
 ### 文章 docx 和 HTML 输出
 
 这两个没什么说的。就是发给不喜欢 LaTeX PDF的人看文章用的。
 
-~~~make
+```make
 $(DOCNAME).docx: $(DOCNAME).md makefile make/target.mk \
 	$(IMAGEDIR)
 	$(OS_OPTION)
@@ -402,11 +402,11 @@ $(DOCNAME).html: $(DOCNAME).md
 		$(PANDOC_COMMON_OPT) \
 		$(BIB_OPT) \
 
-~~~
+```
 
 ### Beamer 幻灯片输出
 
-~~~make
+```make
 $(DOCNAME2).pdf: $(DOCNAME2).md makefile make/target.mk \
        $(STYLEDIR) $(REF_STYLE) \
        $(IMAGEDIR)
@@ -420,13 +420,13 @@ $(DOCNAME2).pdf: $(DOCNAME2).md makefile make/target.mk \
 		--csl="$(REF_STYLE)" \
 		--pdf-engine=xelatex \
 		--verbose
-~~~
+```
 
 ### 通用 target
 
 这里设置了几个用于清理文件、编译全部文件之类的通用 PHONY 目标。其中 default 应该放在最前面，是执行 make 命令时希望默认执行的目标。因为我大部分时候并不需要编译 docx、html 之类的格式，默认目标我只设置了编译 PDF 并预览。
 
-~~~make
+```make
 default: $(DOCNAME).pdf
 	$(OPEN_PDF)
 
@@ -456,4 +456,4 @@ clean: cleantex
 	
 
 .PHONY: default all clean help cleantex 
-~~~
+```
