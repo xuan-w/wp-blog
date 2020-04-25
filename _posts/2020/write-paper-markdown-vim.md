@@ -15,8 +15,8 @@ tags:
   - pandoc
   - VIM
   - Word Processing
-  - 文字处理
   - Zotero
+  - 文字处理
 categories:
   - Fiddling
   - Knowhow
@@ -270,11 +270,11 @@ Makefile 文件中 `#` 开头的一行是注释
 # Here we set a variable to indicate we are using Windows
 WINDOWS=1
 
-# command to open pdf. If it is running, don't open again. Please change path
-OPEN_PDF=powershell -c "if(-Not(Get-Process -Name SumatraPDF -ErrorAction SilentlyContinue)){ start C:\abc\def\SumatraPDF\SumatraPDF.exe $(DOCNAME).pdf}"
+# command to open pdf. If it is running, don&#039;t open again. Please change path
+OPEN_PDF=powershell -c &quot;if(-Not(Get-Process -Name SumatraPDF -ErrorAction SilentlyContinue)){ start C:\abc\def\SumatraPDF\SumatraPDF.exe $(DOCNAME).pdf}&quot;
 
-# command to open pdf in Linux. If it is running, don't open again.
-# OPEN_PDF=if pgrep "pdf" >/dev/null; then pdfviewer $(DOCNAME).pdf&; fi
+# command to open pdf in Linux. If it is running, don&#039;t open again.
+# OPEN_PDF=if pgrep &quot;pdf&quot; &gt;/dev/null; then pdfviewer $(DOCNAME).pdf&amp;; fi
 
 # location of bib file. Please change path
 GLOBAL_BIBFILE=C:\abc\def\BetterBib.bib
@@ -285,7 +285,7 @@ PANDOC=pandoc
 PANDOC_COMMON_OPT=-F pandoc-crossref --number-sections
 
 # set bibtex option for pandoc
-BIB_OPT=--bibliograph="$(GLOBAL_BIBFILE)"
+BIB_OPT=--bibliograph=&quot;$(GLOBAL_BIBFILE)&quot;
 
 # OS specific part
 
@@ -294,10 +294,10 @@ ifdef WINDOWS
 # this is for non utf-8 terminal. Pandoc only work in utf-8
 OS_OPTION=chcp.com 65001
 # in case of MSYS make, del is not recognized
-RM_CMD_HEAD=powershell -c "rm 
+RM_CMD_HEAD=powershell -c &quot;rm 
 # define directory path
 BASEDIR=.
-RMTEX=powershell -c "rm tex2pdf* -r -fo"
+RMTEX=powershell -c &quot;rm tex2pdf* -r -fo&quot;
 
 else
 # for *nix, use below
@@ -306,7 +306,7 @@ OS_OPTION=echo nothing
 # since powershell need the double quote, have to add this too
 # simple rm -f quote *.pdf cannot delete it
 # add -f to omit error messages
-RM_CMD_HEAD=bash -c "rm -f
+RM_CMD_HEAD=bash -c &quot;rm -f
 BASEDIR=$(CURDIR)
 RMTEX=rm -rf tex2pdf*
 endif
@@ -347,9 +347,9 @@ $(DOCNAME).pdf: $(DOCNAME).md makefile make/target.mk \
 		-o $(DOCNAME).pdf \
 		$(PANDOC_COMMON_OPT) \
 		$(BIB_OPT) \
-		-H "$(TEX_HEAD)" \
-		--template="$(TEX_TEMPLATE)" \
-		--csl="$(REF_STYLE)" \
+		-H &quot;$(TEX_HEAD)&quot; \
+		--template=&quot;$(TEX_TEMPLATE)&quot; \
+		--csl=&quot;$(REF_STYLE)&quot; \
 		--pdf-engine=xelatex \
 		--verbose
 ```
@@ -375,9 +375,9 @@ $(DOCNAME)_full.tex: $(DOCNAME).md makefile make/target.mk \
 		-o $(DOCNAME)_full.tex \
 		$(PANDOC_COMMON_OPT) \
 		$(BIB_OPT) \
-		-H "$(TEX_HEAD)" \
-		--template="$(TEX_TEMPLATE)" \
-		--csl="$(REF_STYLE)" \
+		-H &quot;$(TEX_HEAD)&quot; \
+		--template=&quot;$(TEX_TEMPLATE)&quot; \
+		--csl=&quot;$(REF_STYLE)&quot; \
 		--pdf-engine=xelatex \
 		--verbose
 ```
@@ -417,8 +417,8 @@ $(DOCNAME2).pdf: $(DOCNAME2).md makefile make/target.mk \
 		-o $(DOCNAME2).pdf \
 		$(PANDOC_COMMON_OPT) \
 		$(BIB_OPT) \
-		-H "$(BEAMER_HEAD)" \
-		--csl="$(REF_STYLE)" \
+		-H &quot;$(BEAMER_HEAD)&quot; \
+		--csl=&quot;$(REF_STYLE)&quot; \
 		--pdf-engine=xelatex \
 		--verbose
 ```
@@ -435,14 +435,14 @@ all: $(DOCNAME).pdf $(DOCNAME).tex $(DOCNAME)_full.tex \
 	$(DOCNAME).docx $(DOCNAME).html
 
 help:
-	@echo "make" to compile pdf and view it
-	@echo "make all" to compile pdf, html, docx and tex
-	@echo "make $(DOCNAME).tex" to get parital tex to paste to overleaf
-	@echo "make $(DOCNAME)_full.tex" to get complete tex file
-	@echo "make $(DOCNAME).docx" to get docx
-	@echo "make $(DOCNAME).html" to get html
-	@echo "make clean" to remove all output documents
-	@echo "make help" to display this help
+	@echo &quot;make&quot; to compile pdf and view it
+	@echo &quot;make all&quot; to compile pdf, html, docx and tex
+	@echo &quot;make $(DOCNAME).tex&quot; to get parital tex to paste to overleaf
+	@echo &quot;make $(DOCNAME)_full.tex&quot; to get complete tex file
+	@echo &quot;make $(DOCNAME).docx&quot; to get docx
+	@echo &quot;make $(DOCNAME).html&quot; to get html
+	@echo &quot;make clean&quot; to remove all output documents
+	@echo &quot;make help&quot; to display this help
 
 
 cleantex:
@@ -450,10 +450,10 @@ cleantex:
 
 
 clean: cleantex
-	$(RM_CMD_HEAD) *.pdf"
-	$(RM_CMD_HEAD) *.tex"
-	$(RM_CMD_HEAD) *.docx"
-	$(RM_CMD_HEAD) *.html"
+	$(RM_CMD_HEAD) *.pdf&quot;
+	$(RM_CMD_HEAD) *.tex&quot;
+	$(RM_CMD_HEAD) *.docx&quot;
+	$(RM_CMD_HEAD) *.html&quot;
 	
 
 .PHONY: default all clean help cleantex 
