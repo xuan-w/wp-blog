@@ -16,6 +16,7 @@ tags:
   - VIM
   - Word Processing
   - 文字处理
+  - Zotero
 categories:
   - Fiddling
   - Knowhow
