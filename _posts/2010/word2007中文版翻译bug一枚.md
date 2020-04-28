@@ -16,7 +16,7 @@ categories:
   - Knowhow
   - Writing Tools
 ---
-波浪线下面一个等号，这个符号转义符是`\cong`，即 congruence 的简写，也就是说这是全等号
+波浪线下面一个等号，"≅"，这个符号转义符是`\cong`，即 congruence 的简写，也就是说这是全等号
 
 但是在 Word 2007 的公式编辑器中，鼠标移到这个符号上面，会显示“约等于”！这可以算是一个中译的BUG了。
 
