@@ -55,7 +55,7 @@ categories:
 
 ![Zotero 日文字体设置](../../images/zotero-ja.png)
 
-因而我们需要改掉日本默认的 sans-serif 字体。继续搜索，然后将一个你喜欢的中文字体放在那一堆日文字体前面即可。我这里用的是微软雅黑。
+因而我们需要改掉日本默认的 sans-serif 字体。继续搜索 font.name-list.sans-serif.ja，然后将一个你喜欢的中文字体放在那一堆日文字体前面即可。我这里用的是微软雅黑。
 
 ![Zotero 日文 sans-serif 字体设置](../../images/zotero-ja-sans.png)
 
