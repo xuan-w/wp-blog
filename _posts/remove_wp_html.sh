@@ -1,6 +1,7 @@
 #!/bin/bash
 
-sed -i 's/&quot;/"/g' $1 
-sed -i 's/&#039;/'\''/g' $1 
-sed -i 's/&gt;/>/g' $1 
-sed -i 's/&amp;/\&/g' $1 
+sed 's/&quot;/"/g' $1 | sed 's/&#039;/'\''/g' | sed 's/&gt;/>/g' | sed 's/&amp;/\&/g' > tmp.tmp
+
+rm $1
+
+mv tmp.tmp $1
