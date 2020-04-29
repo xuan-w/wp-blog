@@ -28,6 +28,8 @@ categories:
 
 本文虽然主体已经完工，但可能不定期修改，以方便读者理解。如果觉得本文有用，欢迎收藏，并在写论文时回来看看有没有更新。
 
+Update on Apr 29 2020: 增加了对 VIM 之外其它编辑器的一些推荐。
+
 如有难以理解的部分，欢迎留言或者对[此文件](https://github.com/xuan-w/wp-blog/blob/master/_posts/2020/write-paper-markdown-vim.md)发 Pull Request。
 
 下面是几个使用示例截屏：
@@ -70,7 +72,7 @@ markdown 写论文的缺点
 
 ## 系统简介
 
-我的这套系统以 [pandoc](https://pandoc.org/) 作为核心，扩充 vanilla markdown 所不支持的各种高级功能。同时使用一系列 VIM 插件来改善在 VIM 上写论文的体验。我所使用的 VIM 插件，许多在 VSCode 之类的编辑器上也有功能相当的插件。
+我的这套系统以 [pandoc](https://pandoc.org/) 作为核心，扩充 vanilla markdown 所不支持的各种高级功能。同时使用一系列 VIM 插件来改善在 VIM 上写论文的体验。我所使用的 VIM 插件，在其它编辑器上也可以配置类似功能，参见“其它编辑器”一节的概述。
 
 下面分为 markdown 扩展、VIM 写作环境和编译系统三部分来概括。
 
@@ -96,6 +98,10 @@ markdown 写论文的缺点
 - 使用 Makefile 管理文稿、图片与输出的最终 PDF 文件之间的更新关系。我使用 GNU make，因为微软的 nmake 功能实在有点少。
 - 为了在 VIM 后台编译文档，使用 VIM 插件 [asyncrun.vim](https://github.com/skywind3000/asyncrun.vim)
 - 使用 [Sumatra PDF](https://www.sumatrapdfreader.org/free-pdf-reader.html) 预览生成的 PDF，因为它轻量而且不会对 PDF 文件上锁，在 PDF 文件被更新之后可以实时更新预览
+
+### 其它编辑器
+
+本文使用 VIM 主要是因为习惯了 VIM 文本编辑的按键绑定。如果读者对于 VIM 并无偏好的话，也可以使用其它编辑器。自然，和 VIM 齐名的 Emacs 是可以配置出本文“VIM写作环境”一节所说的各种改进，不再详谈。当然，Atom 和 VSCode 也可以在配置插件之后做到类似的效果。对于懒得配置各种编辑器插件的人来说，我推荐 [Zettlr](https://www.zettlr.com/)，它直接解决了本文中涉及的许多问题，如 Zotero 支持、表格绘制、拼写语法检查等。不过读者大概已经发现了，本文推荐的所有东西都是开源软件。对于自己的论文这种重要的东西，使用开源软件更不容易在多年之后发现自己无法正确编译自己的论文。
 
 # 功能配置
 
