@@ -11,8 +11,8 @@ done
 
 #compress images
 pngquant -f --ext .png media/*.png
-jpegoptim media/*.jpeg
-jpegoptim media/*.jpg
+jpegoptim -m 70 media/*.jpeg
+jpegoptim -m 70 media/*.jpg
 
 # format markdown files
 python3 convert_pandoc.py tmp.md "${1%.docx}.md"
