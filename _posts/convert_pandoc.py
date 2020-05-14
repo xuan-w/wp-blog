@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-
+# ---coding=utf-8 -----
 import re, os, glob, sys, shutil
 
 
@@ -49,14 +49,16 @@ def pangu(lines):
         tlist = []
         n = len(line)
         for i, char in enumerate(line):
+            if char == '2':
+                1+1
             if is_cjk(char) or not char.isalnum():
                 tlist.append(char)
-            elif i > 0 and is_cjk(line[i - 1]):
-                tlist.append(' ' + char)
-            elif i < n and is_cjk(line[i + 1]):
-                tlist.append(char + ' ')
             else:
+                if i > 0 and is_cjk(line[i - 1]):
+                    tlist.append(' ')
                 tlist.append(char)
+                if i < n and is_cjk(line[i + 1]):
+                    tlist.append(' ')
         new_lines.append(''.join(tlist))
     return new_lines
 
@@ -222,13 +224,14 @@ def generate_head():
 
 
 if __name__ == '__main__':
-    in_md = sys.argv[1]
-    out_md = sys.argv[2]
-    # in_md = 'tmp.md'
-    # out_md = 'tout.md'
+    # in_md = sys.argv[1]
+    # out_md = sys.argv[2]
+    in_md = 'tmp.md'
+    out_md = 'tout.md'
+    head = ''
     with open(in_md, encoding='utf-8') as fp, open(out_md, 'w', encoding='utf-8') as outfp:
         lines = fp.readlines()
-        head = generate_head()
+        # head = generate_head()
         lines = remove_quoted_block(lines)
         lines = remove_endings(lines)
         lines = pangu(lines)
