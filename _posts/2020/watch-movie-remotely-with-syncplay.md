@@ -21,11 +21,11 @@ categories:
 
 在开始正文之前，先列举一下各种在线一起看电影的方法。大致来说，需要两种工具。一种用来同步所有人的播放进度条，方便有人去喝水上厕所时大家聊天等待。另一种用于语音聊天。后者没什么可说的，前者才是难点，可惜并没有什么可以通吃所有视频的方案。
 
-- 对于 Netflix、Youtube、Amazon Prime 乃至优酷、爱奇艺、B站等国内视频网站，有许多浏览器插件可以用于同步播放进度。
+- 对于 Netflix、Youtube、Amazon Prime 乃至优酷、爱奇艺、B 站等国内视频网站，有许多浏览器插件可以用于同步播放进度。
 - 对于本地文件，有两种方案
   - 一种是我们今天晚上所采用的，每个人在各自电脑上播放视频，使用软件同步播放进度。这是今天的主题
-  - 一种是由一个人设置 video streaming server，其它人连上去观看。以前常用 Winamp、foobar2000 来开设或收听 [ShoutCast](https://www.shoutcast.com/) 网络电台的人对此一定不会陌生。就是在网络电台中播放视频罢了。如何使用 [VLC](https://www.videolan.org/vlc/index.html) 来开设“网络电视台”我会[另文](https://blog.wangxuan.name/2020/03/31/how-to-use-vlc-stream-video/)详述。[Plex](https://www.plex.tv/) 和 [Kodi](https://kodi.tv/) 也可以用来这么干，但是这些 Media Center PC 的解决方案未免太重型了。
-- 还有的观影 app 或者服务本身支持多人一起在线观看电影。有些已经死了，现在有一个叫 [微光](https://www.vlightv.com/) 的 app 还活着。倒是“虚拟电影院”类的 VR 软件颇为不少，有 VR 头显的人可以试试。
+  - 一种是由一个人设置 video streaming server，其它人连上去观看。以前常用 Winamp、foobar2000 来开设或收听 [ShoutCast](https://www.shoutcast.com/) 网络电台的人对此一定不会陌生。就是在网络电台中播放视频罢了。如何使用 [VLC](https://www.videolan.org/vlc/index.html) 来开设「网络电视台」我会[另文](https://blog.wangxuan.name/2020/03/31/how-to-use-vlc-stream-video/)详述。[Plex](https://www.plex.tv/) 和 [Kodi](https://kodi.tv/) 也可以用来这么干，但是这些 Media Center PC 的解决方案未免太重型了。
+- 还有的观影 app 或者服务本身支持多人一起在线观看电影。有些已经死了，现在有一个叫 [微光](https://www.vlightv.com/) 的 app 还活着。倒是「虚拟电影院」类的 VR 软件颇为不少，有 VR 头显的人可以试试。
 
 有一篇不错的 [英文文章](https://www.techworm.net/2020/01/watch-videos-together-with-friends.html) 总结了各种工具。其中对于中文互联网常见工具欠奉。比如说，有一个叫 [Coplay](https://github.com/Justineo/coplay) 的 Firefox/Chrome 插件支持常见的国内视频网站。
 
@@ -63,7 +63,7 @@ categories:
     - Username 可不填，推荐填写一个方便别人认出自己的名字
     - 如果已经安装了支持的播放器，"Path to media player" 一项应该已经自动填好。如果安装了多个播放器，选一个自己喜欢的。  
    ![SyncPlay start](../../images/SyncPlay-start.png)
-4. 点击 "Store configuration and run SyncPlay" 按钮，会弹出一个视频播放器窗口。将准备一起看的视频文件拖入该视频播放器窗口中（而不是 SyncPlay 窗口中）。此时 SyncPlay 窗口右半边显示房间中已有的用户和每个用户播放器中的文件名。请保证自己的用户名后面显示了视频文件名，而非空白。如果不是这样，请重复第4步和第5步，可能是未关闭所有已有视频窗口。  
+4. 点击 "Store configuration and run SyncPlay" 按钮，会弹出一个视频播放器窗口。将准备一起看的视频文件拖入该视频播放器窗口中（而不是 SyncPlay 窗口中）。此时 SyncPlay 窗口右半边显示房间中已有的用户和每个用户播放器中的文件名。请保证自己的用户名后面显示了视频文件名，而非空白。如果不是这样，请重复第 4 步和第 5 步，可能是未关闭所有已有视频窗口。  
    ![SyncPlay ready](../../images/SyncPlay-ready.png)
 4. 连上语音/视频聊天平台，和所有人打个招呼
 5. 人到齐之后，每个人都勾选 SyncPlay 窗口右下角的 "I'm ready to watch"。然后任意一个人点击视频播放器的播放按钮，所有人的视频就会同步开始播放。
