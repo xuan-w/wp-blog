@@ -22,6 +22,7 @@ categories:
 在开始正文之前，先列举一下各种在线一起看电影的方法。大致来说，需要两种工具。一种用来同步所有人的播放进度条，方便有人去喝水上厕所时大家聊天等待。另一种用于语音聊天。后者没什么可说的，前者才是难点，可惜并没有什么可以通吃所有视频的方案。
 
 - 对于 Netflix、Youtube、Amazon Prime 乃至优酷、爱奇艺、B 站等国内视频网站，有许多浏览器插件可以用于同步播放进度。
+- 目前 Amazon Prime、Hulu 已经官方提供了 Watch Party 功能（于 2021 年 3 月更新此条）
 - 对于本地文件，有两种方案
   - 一种是我们今天晚上所采用的，每个人在各自电脑上播放视频，使用软件同步播放进度。这是今天的主题
   - 一种是由一个人设置 video streaming server，其它人连上去观看。以前常用 Winamp、foobar2000 来开设或收听 [ShoutCast](https://www.shoutcast.com/) 网络电台的人对此一定不会陌生。就是在网络电台中播放视频罢了。如何使用 [VLC](https://www.videolan.org/vlc/index.html) 来开设「网络电视台」我会[另文](https://blog.wangxuan.name/2020/03/31/how-to-use-vlc-stream-video/)详述。[Plex](https://www.plex.tv/) 和 [Kodi](https://kodi.tv/) 也可以用来这么干，但是这些 Media Center PC 的解决方案未免太重型了。
