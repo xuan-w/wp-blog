@@ -33,4 +33,6 @@ categories:
 
 # 近期更新博文
 
+[美剧基地观后感](https://blog.wangxuan.name/2021/10/23/my-opinion-on-foundation-series/)
+
 [使用 SyncPlay 和异地朋友一起看电影](https://blog.wangxuan.name/2020/03/30/watch-movie-remotely-with-syncplay/) 有一个小改动，补充了现在官方提供 Watch Party 功能的网站。
