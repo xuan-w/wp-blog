@@ -26,7 +26,7 @@ categories:
 有几个系列的笔记可能会整理整理丢上来。
 
 一个系列是关于 Yubikey 与 GPG 的使用。
-一个系列是自建邮件服务器。
+一个系列是关于电子邮件的方方面面：加密邮件、域名邮箱、自建邮件服务器，等等。已经发了一篇加密邮件的。
 一个系列是 Home Assistant。
 
 整理好之后，仍然会倒填一个当初记笔记的时间作为博文的发表时间。
@@ -34,5 +34,7 @@ categories:
 # 近期更新博文
 
 [美剧基地观后感](https://blog.wangxuan.name/2021/10/23/my-opinion-on-foundation-series/)
+
+[关于 ProtonMail 及其它加密邮件服务的看法](https://blog.wangxuan.name/2021/10/03/protonmail-encryptied-email-review/)
 
 [使用 SyncPlay 和异地朋友一起看电影](https://blog.wangxuan.name/2020/03/30/watch-movie-remotely-with-syncplay/) 有一个小改动，补充了现在官方提供 Watch Party 功能的网站。

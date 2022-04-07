@@ -1,7 +1,7 @@
 ---
 ID: 333
 post_title: >
-  关于 ProtonMail
+  对 ProtonMail
   及其它加密邮件服务的看法
 post_name: protonmail-encryptied-email-review
 author: Xuan
