@@ -5,7 +5,7 @@ post_title: >
   及其它加密邮件服务的看法
 post_name: protonmail-encryptied-email-review
 author: Xuan
-post_date: 2022-04-07 17:36:11
+post_date: 2021-10-03 13:41:11
 layout: post
 link: >
   https://blog.wangxuan.name/2022/04/07/protonmail-encryptied-email-review/
@@ -52,11 +52,13 @@ ProtonMail 仅在通讯双方都使用 ProtonMail 或 PGP 时可以提供理想�
 ## 不谨慎使用 ProtonMail 可能遇到的风险
 
 ProtonMail 可能向执法者交出哪些信息？如果收到瑞士法院的搜查令，ProtonMail 可以向法院交出如下信息：
+
 - 用户的登录 IP。
 - 用户与哪些邮件地址有邮件往来，及往来邮件标题。
 - 密码保护的用户私钥。如果用户密码可以被破解，则可以据此解密用户的全部邮件。
 
 不谨慎使用 ProtonMail 可能遭到的攻击举例
+
 - 和自己通讯的人的地址是假的，攻击者在中间代理收发。
 - 没有隐藏自己的 IP，或者在有很多个人信息的地方发布自己的邮箱，导致肉身被有关方面定位。
 - 使用 ProtonMail 来接受材料，但发送材料的人未使用 ProtonMail。发送材料的人被定位并受到人身威胁交出通讯往来。
@@ -65,6 +67,7 @@ ProtonMail 可能向执法者交出哪些信息？如果收到瑞士法院的搜
 这类例子还可以举出几十种，对于小白来说，完全绕开非常困难。
 
 如果极端看重邮件安全，完全的隐私保护应该注意以下几方面
+
 - 注意验证通讯方的公钥和身份
 - 设置足够长的密码
 - 要求通讯对方也使用 ProtonMail 或 PGP 对邮件加密
