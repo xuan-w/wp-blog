@@ -10,7 +10,6 @@ published: false
 tags:
   - WordPress
 categories:
-  - Dairy
   - Digest
 ---
 # 为什么停更
@@ -33,8 +32,22 @@ categories:
 
 # 近期更新博文
 
+整理了两篇去年写的。
+
 [美剧基地观后感](https://blog.wangxuan.name/2021/10/23/my-opinion-on-foundation-series/)
 
 [关于 ProtonMail 及其它加密邮件服务的看法](https://blog.wangxuan.name/2021/10/03/protonmail-encryptied-email-review/)
 
 [使用 SyncPlay 和异地朋友一起看电影](https://blog.wangxuan.name/2020/03/30/watch-movie-remotely-with-syncplay/) 有一个小改动，补充了现在官方提供 Watch Party 功能的网站。
+
+# 其它更新博文
+
+以下博文是在博客停更之前就悄摸摸搬运的旧博客或者草稿箱里的文章。都是几年前写的，大部分没有什么特殊的趣味。
+
+[浅谈便携多功能工具选购——瑞士军刀与莱泽曼钳的对比](https://blog.wangxuan.name/2016/01/15/choose-swiss-army-knife-multi-purposes-tool/)
+
+[Zotero 英文界面下中文字体异常的原因和解决办法](https://blog.wangxuan.name/2016/03/07/solution-zotero-chinese-font-display-in-english/)
+
+[漫谈那些年用过的词典软件](https://blog.wangxuan.name/2016/01/23/dictionary-software-i-used/)
+
+[我为什么还需要相机——写在买了 GX85 之后](https://blog.wangxuan.name/2018/12/14/why-do-i-need-new-camera/)
