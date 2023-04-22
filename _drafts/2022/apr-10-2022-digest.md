@@ -6,7 +6,7 @@ author: Xuan
 post_date: 2022-04-07 17:45:20
 layout: post
 link: https://blog.wangxuan.name/?p=330
-published: false
+published: true
 tags:
   - WordPress
 categories:
@@ -18,7 +18,13 @@ categories:
 
 与此同时，还攒了一堆其它的笔记没发。等到我终于无法接受我自己的懒惰，准备跳过那永远没有完成的「下」的时候，很不幸地发现，用来同步 GitHub 上的 markdown repository 和WordPress 的插件在 WordPress 大版本升级之后坏了！这就更给了我拖延的借口。
 
-直到前两天才打起精神，认真 debug 了一下那个插件，修好了它。
+直到前两天才打起精神，认真 debug 了一下那个插件，修好了它。不过修好之后我才意识到，好像我原来是有转到 [org2blog](https://github.com/org2blog/org2blog) 的打算来着，恐怕这修完了也用不了几次。
+
+# 杂七杂八
+
+CloudFlare tunnel 真好用！
+
+Cloudflare workers 真香！
 
 # 预告或者说立 flag
 
