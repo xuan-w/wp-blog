@@ -21,6 +21,8 @@ categories:
 
 直到前两天才打起精神，认真 debug 了一下那个插件，修好了它。不过修好之后我才意识到，好像我原来是有转到 [org2blog](https://github.com/org2blog/org2blog) 的打算来着，恐怕这修完了也用不了几次。
 
+更新：它又坏了，而我又懒得研究 org2blog 。于是又停更了好久。
+
 # 杂七杂八
 
 CloudFlare tunnel 真好用！
