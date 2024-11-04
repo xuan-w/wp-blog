@@ -1,22 +1,23 @@
 ---
-post_title: 'passkey 指北'
-post_name: 'passkey-guide'
-post_date: '2024-11-03 20:21:26'
-layout: post
-published: false
+ID: 352
+post_title: passkey 指北
+post_name: passkey-guide
 author: Xuan
-tags: 
-  - Yubikey
-  - Passkey
+post_date: 2024-11-03 20:21:26
+layout: post
+link: https://blog.wangxuan.name/?p=352
+published: false
+tags:
+  - Apple
   - Google
   - Microsoft
-  - Apple
+  - Passkey
+  - Yubikey
 categories:
   - Fiddling
-  - Knowhow
   - Internet Freedom
+  - Knowhow
 ---
-
 # 什么是 passkey
 
 Passkey 的官方中文翻译是“通行密钥”，这实在不是个好的翻译。本来推广 passkey 的几大公司起这个名字，是和 password 相对应，password 是“用于通行的口令”，那么 passkey 就是“用于通行的钥匙”，简单好记。但 password 的中文已经约定俗成翻译为“密码”，“密钥”又另有所指，不得不起了这么一个蹩脚的翻译。四字短语永远会在广泛使用后有一个两字的缩写，不知道假以时日，会不会有人用“通钥”来简称 passkey。不过以今日中文网站对 passkey 的冷漠，这一天即使有大概也很遥远。
