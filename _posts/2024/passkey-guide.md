@@ -31,7 +31,7 @@ Passkey 的官方中文翻译是「通行密钥」，这实在不是个好的翻
 
 2022 年，Microsoft Google Apple 三大操作系统提供商，以及 Chrome Firefox 浏览器终于开始一致行动，推广免密码登录。虽然本质上是新瓶装旧酒，底层方案仍然是久已有之的东西，但一个好名字显然有助于推广，这个新名字就是 passkey。这之后，支持 passkey 登录的网站慢慢多起来。
 
-Passkey 的目标不仅是取代密码，还要取代传统的两步验证（2FA）。对于两步验证，或者多因素验证来说，登入帐户需要两个凭证，一件是「用户知道的」，比如说密码，一件是「用户持有的」，比如说硬件密钥或者手机。如果有人偷了用户持有的东西，但是不知道密码，自然无法访问。如果有人偷窥到了密码，或者恶意软件记录了密码，只要没有把第二凭证拿到手，还是无法登录。Passkey 既然要取代两步验证，安全性自不能降低，还是要证明用户已经出示了两种凭证。
+Passkey 的目标不仅是取代密码，还要取代传统的两步验证（2FA）。对于两步验证，或者多因素验证来说，登入帐户需要两个凭证，一件是「用户知道的」，比如说密码，一件是「用户持有的」，比如说硬件密钥或者手机。如果有人偷了用户持有的东西，但是不知道密码，自然无法访问。如果有人偷窥到了密码，或者恶意软件记录了密码，只要没有把第二凭证拿到手，还是无法登入。Passkey 既然要取代两步验证，安全性自不能降低，还是要证明用户已经出示了两种凭证。
 
 打个比方来说明一下什么是 passkey ：一个网站或者其它需要验证身份的服务（relying party）（RP）要求用户出示某种凭证来证明身份：
 
@@ -43,7 +43,7 @@ Passkey 的目标不仅是取代密码，还要取代传统的两步验证（2FA
 
 如果要买个特制密码箱（passkey 设备）才能使用 passkey 的话，就不会有几个人用它了。老套的 OTP 验证之所以这两年来获得普及，就是因为在手机上装个 authenticator app 很方便，不需要 U 盾或者动态口令牌之类的专用设备。这次 passkey 的卷土重来，正是三大操作系统提供商陆续在操作系统层面加入了对 passkey 的支持：passkey 不再需要是某个专用设备，而可以是我们已经在使用的手机或电脑。既然手机电脑本来就需要 PIN 或者指纹解锁，又基本不离身，为什么不用作 passkey 呢？这次三家的联合推广使 passkey 成功破圈，以至于在绝大部分第一次听说 passkey 的人眼中，passkey 就是 iPhone 或者 Android 手机上的一个新功能。而那些专门的硬件设备如 Yubikey，在网站上愤愤不平地说：我们十几年前就可以当 passkey 用了！
 
-相对于传统的用户名密码登录，passkey 无论是安全性和便捷性都要好很多。从安全性上来说，网站被拖库不会影响到用户的帐户，因为攻击者没有用户的私钥，即使获得网站数据库也无法假冒用户登录。从便捷性上来说，用户不需要记忆每个网站的密码，只需要记忆解锁 passkey 的密码，记忆负担大大减轻。十分建议本文读者尝试一下 passkey 登录：用过就回不去啦！
+相对于传统的用户名密码登录，passkey 无论是安全性和便捷性都要好很多。从安全性上来说，网站被拖库不会影响到用户的帐户，因为攻击者没有用户的私钥，即使获得网站数据库也无法假冒用户登入。从便捷性上来说，用户不需要记忆每个网站的密码，只需要记忆解锁 passkey 的密码，记忆负担大大减轻。十分建议本文读者尝试一下 passkey 登录：用过就回不去啦！
 
 ## passkey 设备
 
@@ -86,11 +86,11 @@ Passkey 设备的安全性全系于它如何保护用户登录网站的私钥。
 
 其实 passkey 只是 FIDO2 WebAuthn 换了个好听的新名字。对于 FIDO2 WebAuthn 来说，有两种凭证：discoverable credential 和 non-discoverable credential。以前叫作 resident key 和 non-resident key。现在说的 passkey，严格来说，应该只是 discoverable credential。不过也有一些网站比如说 Google 在管 non-discoverable credential 叫作 passkey。
 
-就实际使用体验来说，discoverable credential 理论上连输入用户名都可以免掉。因为用户名、网站域名连同私钥一起存储在 passkey 当中。而 non-discoverable credential 则需要输入用户名之后再进行认证，passkey 设备本身并不存储该网站的登录用私钥。
+就实际使用体验来说，discoverable credential 理论上连输入用户名都可以免掉。因为用户名、网站域名连同私钥一起存储在 passkey 当中。而 non-discoverable credential 则需要输入用户名之后再进行认证，passkey 设备本身并不存储该网站的登入用私钥。
 
 简略而说，两者的工作模式是这样的：
 
-- 对于 discoverable credential，用户在网站选择使用 passkey 登录之后，网站会向 passkey 设备发出请求，设备检查自己是否存有该网站的登录凭证，如果有的话，就调取内部存储的私钥进行签名认证，没有就拒绝认证。如果有多个用户名的话，浏览器会提示用户选择其中一个用于登录。
+- 对于 discoverable credential，用户在网站选择使用 passkey 登入之后，网站会向 passkey 设备发出请求，设备检查自己是否存有该网站的登录凭证，如果有的话，就调取内部存储的私钥进行签名认证，没有就拒绝认证。如果有多个用户名的话，浏览器会提示用户选择其中一个用于登录。
 - 对于 non-discoverable credential，认证过程很像 FIDO U2F（虽然 U2F 通常用于 2FA 而非 passkey）。用户需要先输入用户名，网站调取记录，找到一段数据，将这个数据包发给 passkey 设备来进行下一步。这个数据（key handle）是和前述 discoverable credential 认证过程中的最大的不同点。它不仅仅包含网站的域名等信息，还包含用户私钥信息！不过它被 passkey 设备的公钥加密，只有 passkey 设备的私钥才能解密，所以网站无法读取或篡改其中的内容（这里说的 passkey 设备的私钥是它的 master 私钥，每个 passkey 设备上的每个 authenticator 只有一个，而非每个网站有不同的私钥）。这个数据解开之后，passkey 设备使用其中的数据重建「该网站认证专用」私钥，再以该私钥签名认证。如果仅仅用作第二因素认证的话，整个过程并不强制要求用户验证 PIN 。但如果是用作免密码登录的 passkey，用户必须要先输入 PIN 或者指纹解锁 passkey 设备，之后 authenticator 才会执行认证。
 
 由上可见，discoverable credential 需要占用 passkey 设备的存储空间，而 non-discoverable credential 不需要。对于手机这样的设备来说，存储密钥所占的空间可以忽略不计，而对于 Yubikey 之类的外置硬件密钥来说，存储空间有限。5.7 版固件之前的 Yubikey 只支持存储 25 组 discoverable credentials，到底把这宝贵的 25 个槽用在哪些网站上就得琢磨一下了。
@@ -105,13 +105,13 @@ Passkey 设备的安全性全系于它如何保护用户登录网站的私钥。
 
 最安全的私钥存储方式是：私钥在 passkey 设备上创建并只能在 passkey 设备上使用，永远不能离开 passkey 设备。这样做的缺点很明显：如果设备丢失的话，这个 passkey 就没了，需要使用其它方式登录后再创建一个 passkey。如果买了新手机，想在新手机中设置 passkey 的话，每个网站都要重新来一遍。
 
-因此 FIDO2 标准并不禁止 passkey 设备将私钥传到云端。目前苹果设备上创建的 passkey 都会上传到 iCloud Keychain，而 Android 设备的 passkey 默认都会上传到 Google Password Manager。这样做的优点是用户买了新手机之后不需要重新设置，所有网站的登录凭证都自动下载下来立刻可用。但风险也因此增加：任何一个设备被攻击得手，所有存储于 iCloud Keychain 中的 passkey 都会泄露。整体的安全性等同于任何同步了私钥的 passkey 设备中安全性最低的那一个。比如说，如果手机端每次使用 passkey 都需要 FaceID 但 Mac 上只有开机的时候才需要验指纹，使用 passkey 的时候不需要的话，那么这个网站帐户的安全性就等同于它在 Mac 上登录时的安全性——也就是说任何人在 Mac 开机的时候偷走你的 Mac 就可以登录你的帐户 [例子](https://www.reddit.com/r/Passkeys/comments/1fz6cb9/passwordless_pinless_authentication_possible_for/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button) 。对于最重要的帐户，也许不要传到云端为妙。
+因此 FIDO2 标准并不禁止 passkey 设备将私钥传到云端。目前苹果设备上创建的 passkey 都会上传到 iCloud Keychain，而 Android 设备的 passkey 默认都会上传到 Google Password Manager。这样做的优点是用户买了新手机之后不需要重新设置，所有网站的登录凭证都自动下载下来立刻可用。但风险也因此增加：任何一个设备被攻击得手，所有存储于 iCloud Keychain 中的 passkey 都会泄露。整体的安全性等同于任何同步了私钥的 passkey 设备中安全性最低的那一个。比如说，如果手机端每次使用 passkey 都需要 FaceID 但 Mac 上只有开机的时候才需要验指纹，使用 passkey 的时候不需要的话，那么这个网站帐户的安全性就等同于它在 Mac 上登录时的安全性——也就是说任何人在 Mac 开机的时候偷走你的 Mac 就可以登入你的帐户 [例子](https://www.reddit.com/r/Passkeys/comments/1fz6cb9/passwordless_pinless_authentication_possible_for/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button) 。对于最重要的帐户，也许不要传到云端为妙。
 
 目前 Apple 和 Google 默认都使用云端同步。而微软一方较为谨慎，Windows Hello 创建的 passkey 默认只存储在本地。
 
 至少在目前，iCloud Keychain 无法在 Android 设备上使用。这带来了一点小麻烦：如果想在 iPhone 和 Android 上都使用 passkey 登录同一个网站，需要在两台手机上分别创建 passkey。一个办法是使用第三方密码管理器来同步 passkey，比如说 1Password，LastPass 和 Bitwarden，它们都同时支持 iOS 和 Android。但这些密码管理器并非操作系统组件，更容易被恶意软件攻击。
 
-与此相对，外置硬件密钥提供了另一种思路：虽然密钥本身不同步到云端，但可以把硬件密钥插到不同设备上使用。使用 Yubikey 这样的硬件密钥，只需要在登录的时候把 Yubikey 插到（或者贴上）正在用的手机就可以了。因而，它既提供了最强的安全性，同时也提供了操作系统 passkey 所欠缺的一点跨平台同步的便捷性。
+与此相对，外置硬件密钥提供了另一种思路：虽然密钥本身不同步到云端，但可以把硬件密钥插到不同设备上使用。使用 Yubikey 这样的硬件密钥，只需要在登入的时候把 Yubikey 插到（或者贴上）正在用的手机就可以了。因而，它既提供了最强的安全性，同时也提供了操作系统 passkey 所欠缺的一点跨平台同步的便捷性。
 
 ## 混乱的命名：passkey 和 security key
 
@@ -171,7 +171,7 @@ Android 同样已经支持创建和管理 passkey。系统创建的 passkey 会�
 
 在操作系统御三家中，Microsoft 对免用户名密码登录的支持最早，也最全面。不过很长时间里一直在测试，时灵时不灵。目前来看已经比较完善可用，对于各种 passkey 设备都有所支持。微软只支持 discoverable credential 登录。即使在当年 Yubikey 只能作为 2FA security key 使用的时候，也会创建一个 discoverable credential。如果当年已经将 YUbikey 作为 2FA 凭证登记，之后会自动升级成 passkey。
 
-如果要使用 passkey 登录，登录时不可填写用户名，而需要点击下方的 Sign-in Option 按钮，再选择「Face, fingerprint, PIN or security key」。
+如果要使用 passkey 登录，登入时不可填写用户名，而需要点击下方的 Sign-in Option 按钮，再选择「Face, fingerprint, PIN or security key」。
 
 综上，微软对 passkey 的支持最为规范全面，几乎没有什么坑。总结：只支持 discoverable credential，不需要输入用户名，支持所有类型 passkey，支持所有浏览器。
 
@@ -199,7 +199,7 @@ Apple 对 passkey 的支持是御三家里最迟缓的。很长时间里，苹�
 
 目前，没有任何办法为 Apple ID 手工创建 passkey。使用 iOS 17 以上的设备登录 Apple ID 时，会自动为用户创建 passkey，这个 passkey 在设置中不可见，无法删除。
 
-在使用浏览器登录 Apple ID 时，在输入用户名之后有一个使用 passkey 登录的选项，然后可以使用 iPhone 扫码登录。这似乎是使用 passkey 登录苹果帐户的唯一途径。目前不支持 Firefox。
+在使用浏览器登入 Apple ID 时，在输入用户名之后有一个使用 passkey 登入的选项，然后可以使用 iPhone 扫码登入。这似乎是使用 passkey 登入苹果帐户的唯一途径。目前不支持 Firefox。
 
 苹果支持使用 Yubikey 作为 2FA security key 但不支持将 Yubikey 用作 passkey。更讨厌的是，目前用 Yubikey 做 2FA 也很令人痛苦：许多旧设备和 Windows 客户端、Android 客户端会被踢下来无法登录。目前在非苹果平台上的客户端，只有 iCloud for Windows 已经明确支持 security key，其它的支持状态仍然不明，许多人反映，一旦启用 security key，Apple Music 无法在非苹果平台登录。往好里说，苹果至少做对了一点：如果你希望用 security key 来加强安全性，那么所有更不安全的登录方式都必须被禁用。但苹果迟缓的的软件开发进度使得 security key 目前体验不佳。
 
@@ -219,11 +219,21 @@ Amazon 对 passkey 的支持吧，说是不支持，它倒也支持。但这个�
 
 首先，amazon 对 passkey 的理解就很成问题。它的帮助文档里认为 passkey 「仅仅」是可以在云端漫游的 passkey ，所以你只需要一个 Apple 的，一个 Google 的，不需要更多了。视 Microsoft 和 Yubikey 为无物。虽然实际上也完全可以用 Windows Hello 和 Yubikey 绑定 passkey 。
 
-其次，amazon 无法使用 passkey 绕过 2FA。passkey 只能省去输密码的麻烦，形同一个密码管理器（参见上文，可能它的技术团队真的觉得 passkey 和你把 amazon 密码存在 iCloud Keychain 里没什么区别）。如果你的 amazon 帐户开启了 2FA，那么你每次登录 amazon 需要解锁 passkey 之后再输入 2FA 验证码。这纯属脱了裤子放屁。2FA TOTP 验证码唯一的作用就是证明用户持有一个可以生成验证码的设备。如果按 amazon 的理解，passkey 就存在手机上，TOTP 也是手机上的 app, 多这一道手续不会增加任何安全性。
+其次，amazon 无法使用 passkey 绕过 2FA。passkey 只能省去输密码的麻烦，形同一个密码管理器（参见上文，可能它的技术团队真的觉得 passkey 和你把 amazon 密码存在 iCloud Keychain 里没什么区别）。如果你的 amazon 帐户开启了 2FA，那么你每次登入 amazon 需要解锁 passkey 之后再输入 2FA 验证码。这纯属脱了裤子放屁。2FA TOTP 验证码唯一的作用就是证明用户持有一个可以生成验证码的设备。如果按 amazon 的理解，passkey 就存在手机上，TOTP 也是手机上的 app, 多这一道手续不会增加任何安全性。
 
 最后，amazon 创建的是 discoverable credential，但它依然要求输入用户名登录，无法实现免用户名登录。
 
 综上，在 amazon 上使用 passkey 的唯一用途大概是「不输密码，避免被键盘监听软件偷密码」吧。
+
+### Adobe
+
+Adobe 对 passkey 的支持也是比较奇特的。像 Google 一样，它在登录的时候在输用户名的地方有一个下拉框可以选择 passkey，此时只能使用 DC 登入，而输入用户名之后，还有一个使用 NDC passkey 登入的按钮。不过我只成功地创建 NDC passkey，不知道它到底支持不支持创建 DC passkey。
+
+和 Amazon 一样，用 passkey 登入 Adobe 时不能跳过两步验证，登入过程十分麻烦。
+
+最后，它甚至不提供为 passkey 重命名的功能！如果 passkey 丢失之后想删除的话，大概只能把所有 passkey 都一股脑删掉了帐。
+
+总的来说，这个支持确实很差，和 Amazon 一样，唯一的用途就是「不输密码」。
 
 ### NVidia
 
