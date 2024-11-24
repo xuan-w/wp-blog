@@ -189,7 +189,11 @@ Google 也是主流服务里少见的允许用户将一把硬件密钥同时登�
 
 在今天，如果想把 Yubikey 仅用于 2FA security key 的话，办法是先禁用 Yubikey 的 FIDO2 功能，再作为 security key 登记（否则会被登记为 passkey）。
 
-在 Google 网页上创建 passkey 时，如果使用 create a passkey 选项，则只能使用操作系统内置 passkey 功能。如果需要注册外置硬件密钥，需要使用 Use another device 选项。
+一些小提示：
+
+- 如果帐户中既有 2FA security key 又有 passkey 的话，有些环节的交互逻辑会有些令人迷惑：比如说，在已经登入帐户的情况下，如果要访问一些敏感信息，仍然需要再次验证密码或 passkey，此时 2FA security key 不可以用于验证身份，必须使用密码或 passkey。如果用的 key 仅注册为 2FA security key 的话，用户可能会对验证失败的结果有些迷惑。
+
+- 在 Google 网页上创建 passkey 时，如果使用 create a passkey 选项，则只能使用操作系统内置 passkey 功能。如果需要注册外置硬件密钥，需要使用 Use another device 选项。
 
 总结：支持免用户名登录，对外置硬件密钥支持有些奇怪，支持所有类型 passkey，支持所有浏览器。
 
