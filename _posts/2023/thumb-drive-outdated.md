@@ -1,20 +1,24 @@
 ---
-post_title: 'U 盘已死，兼论 2023/2024 年移动存储的购买建议'
-post_name: 'thumb-drive-outdated'
-post_date: '2023-11-02 12:13:46'
-layout: post
-published: true
+ID: 359
+post_title: >
+  U 盘已死，兼论 2023/2024
+  年移动存储的购买建议
+post_name: thumb-drive-outdated
 author: Xuan
-tags: 
-  - U 盘
+post_date: 2023-11-02 12:13:46
+layout: post
+link: >
+  https://blog.wangxuan.name/2023/11/02/thumb-drive-outdated/
+published: true
+tags:
   - EDC
   - photography
+  - U 盘
 categories:
-  - Shopping
   - Digital
   - Personal Opinion
+  - Shopping
 ---
-
 # U 盘已死
 
 U 盘的死亡过程已经持续了几年时间，到 2023 年这个时间点，几乎可以算得上寿终正寝，很难买到便宜又好用的 U 盘。传统 U 盘所承担的功能，考虑到性价比，现在大多可以（且应该）用其它设备来承担。或者有人说，明明应该是 U 盘取代移动硬盘。然而，真正性能上可以取代移动固态的 U 盘，其价格恐怕和传统 U 盘不在一个定位上。便宜又好用的 U 盘，确乎是很难买到了。所以这里说的 U 盘已死，说的是我们印象的那种便宜好用、总会随身携带，啥都能干，既能拷文件，又能装系统的 U 盘，正在离开我们的日常生活，也渐渐没有什么可买的选择。
