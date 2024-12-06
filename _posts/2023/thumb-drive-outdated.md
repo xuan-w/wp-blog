@@ -1,7 +1,7 @@
 ---
 post_title: 'U 盘已死，兼论 2023/2024 年移动存储的购买建议'
 post_name: 'thumb-drive-outdated'
-post_date: '2023-11-02 12:13:46
+post_date: '2023-11-02 12:13:46'
 layout: post
 published: true
 author: Xuan
