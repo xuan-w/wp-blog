@@ -1,6 +1,8 @@
 ---
 ID: 32
-post_title: 从 Netflix 说到中美在线影视市场差异
+post_title: >
+  从 Netflix
+  说到中美在线影视市场差异
 post_name: can-netflix-win-china
 author: Xuan
 post_date: 2017-06-13 15:21:26
