@@ -44,7 +44,7 @@ Kindle 退出中国之后，国区的微信推送和 Send to Kindle 服务都结
 
 ### 1. 需要登录才能访问的网页
 
-某些网页内容（如付费新闻或社交媒体）需要登录后才能查看。这类内容通常需要通过浏览器插件直接抓取，而不能把一个链接发给服务器让服务器来抓。[^1]
+某些网页内容（如付费新闻或社交媒体）需要登录后才能查看。这类内容通常需要通过浏览器插件直接抓取，而不能把一个链接发给服务器让服务器来抓。
 
 大部分「稍后读」服务对此都或多或少有一些支持，但都需要 PC 端的 Chrome 或 Firefox 浏览器插件。在 iOS 设备上就比较挠头了。一般在 iOS Safari 上只能通过分享菜单把链接分享给对应 app，因此只能使用服务器端抓取。
 
@@ -77,11 +77,11 @@ Kindle 退出中国之后，国区的微信推送和 Send to Kindle 服务都结
 
 一劳永逸的解决方案有点折腾。有两个思路：一个思路是，如果能用某种办法拿到生成的 epub 文件，修改语言不就是小菜一碟了吗？Wallabag 是可以用 API 拿到每篇文章导出的 epub 的，而 Pocket 和 Instapaper 不行。另一个办法就是用 Calibre 来抓取 Pocket 或者 Instapaper 的文章，然后再发送到 Kindle。在 Calibre 抓取的时候，可以轻松设置 epub 文件的语言。
 
-无论是用什么办法，要想自动推送而不是手动抓，都得整个自己的服务器来定时抓取，设置好语言，再推送。对于不擅长技术的网友可能有些过于折腾。如果愿意把 Calibre 一直挂机的话，Calibre GUI 的配置倒是不麻烦。
+无论是用什么办法，要想自动推送而不是手动抓，都得整个自己的服务器来定时抓取，设置好语言，再推送。对于不擅长技术的网友可能有些过于折腾。如果愿意把 Calibre 一直挂机的话，Calibre 的配置倒是很简单。
 
 ### 3. 单篇网页，还是文章合集
 
-最后一个问题是：Send to Kindle 这样的服务只能把单篇网页作为一本书推到 Kindle 上。要看的网页一多，就很乱。如果能推送文章合集的话，就会好很多。
+最后一个问题是：Send to Kindle 只能把单篇网页作为一本书推到 Kindle 上。要看的网页一多，就很乱。如果能推送文章合集的话，就会好很多。
 
 ---
 
@@ -91,7 +91,7 @@ Kindle 退出中国之后，国区的微信推送和 Send to Kindle 服务都结
 
 ### **Send to Kindle**
 
-这个 Amazon 提供的官方服务可以说是一切 Kindle 推送的基础。不过这里我们主要关心的是网页推送的能力。在 Chrome 浏览器上有插件可以推送网页，在手机端则是分享给 Kindle app，但是在手机端无法实现浏览器端抓取。
+这个 Amazon 提供的官方工具可以说是一切 Kindle 推送的基础。不过这里我们主要关心的是网页推送的能力。在 Chrome 浏览器上有插件可以推送网页，在手机端则是分享给 Kindle app，但是在手机端无法实现浏览器端抓取。
 
 它既不支持文章打包，又有中文显示问题，还不支持 Firefox。除了偶尔推个长篇英文文章（比如说论文）可以凑合一用，我实在想不出有什么理由用 Amazon 自家的浏览器插件。
 
@@ -142,15 +142,11 @@ Wallabag 没有官方 recipe 但可以在[配置 RSS](https://doc.wallabag.org/u
 
 这样折腾的话有几个小缺点
 
-1. 如果要实现定时推送，要么有个电脑一直在运行 Calibre，要么找个服务器定时运行脚本。
-2. 需要自己写三五行代码来实现「如果没有新文章就不推送」的功能。而这个功能在 Pocket to Kindle 和 Instapaper 里都有。
-3. Pocket to Kindle 和 Instapaper 的官方推送在每篇文章前后都有 archive/favorite 按钮，而 calibre 生成的 epub 文件里没有这些功能，无法在读完之后标记「已读」。实现这个功能需要自己搭个中转服务器大大折腾一番。
+1. 要么有个电脑一直在运行 Calibre ，要么找个服务器定时运行脚本。
+2. 不像 Pocket to Kindle 和 Instapaper 的官方推送，这两个在每篇文章前后都有 archive/favorite 按钮，而 calibre 生成的 epub 文件里没有这些功能，无法在读完之后标记「读过」。
+3. 需要自己写三五行代码来实现「如果没有新文章就不推送」的功能。而这个功能在 Pocket to Kindle 和 Instapaper 里都有。
 
-对于第一点，其实也可以用免费的 GitHub Action 来部署。[Calibre News Delivery](https://github.com/bookfere/Calibre-News-Delivery) 是一个已经做好的模板，直接部署并选择 recipe 后即可使用。作者也发布了一个[教程](https://bookfere.com/post/1107.html)。
-
-对于第二点，如果你使用[这个 Pocket recipe](https://github.com/mmagnus/Pocket-Plus-Calibre-Plugin) 的话，可以参见附录我的代码。其它的 recipe 也可以参考这个思路。
-
-最后一点确实有些折腾，如果觉得不太影响使用的话，可以不折腾。
+对于最后一点，如果你使用[这个 Pocket recipe](https://github.com/mmagnus/Pocket-Plus-Calibre-Plugin) 的话，可以参见附录我的代码。
 
 ### 微信读书等其它奇技淫巧
 
@@ -160,7 +156,7 @@ Wallabag 没有官方 recipe 但可以在[配置 RSS](https://doc.wallabag.org/u
 
 ## 总结
 
-综上，总结如下表。其中的「阅读模式」指的是，这些工具清理原网页的广告等干扰元素生成一个干净的「阅读视图」的能力。中文支持指的是推送到 Kindle 上的中文显示是否正常。
+综上，总结如下表。其中的「阅读模式」指的是这些工具清理原网页的广告等干扰元素生成「阅读视图」的能力。中文支持指的是推送到 Kindle 上的中文显示是否正常。
 
 | 服务           | 浏览器抓取 | 文章合集     | 单篇文章 | 阅读模式 | 中文支持 |
 |----------------|------------|--------------|----------|----------|----------|
@@ -170,7 +166,7 @@ Wallabag 没有官方 recipe 但可以在[配置 RSS](https://doc.wallabag.org/u
 | Wallabag       | 是         | 通过 Calibre | 可 DIY   | 一般     | 可折腾   |
 | Calibre        | -          | 是           | 可       | 良好     | 良好     |
 | 微信读书       | -          | -            | 是       | -        | 优秀     |
-| WPS            | -          | -            | 是       | 差       | 良好     |
+| WPS            | -          | -            | 是       | 差       | 优秀     |
 
 最后我的推荐是：
 
@@ -183,7 +179,7 @@ Wallabag 没有官方 recipe 但可以在[配置 RSS](https://doc.wallabag.org/u
 
 ## 附录
 
-### 修改 Pocket-Plus-Calibre-Plugin 使得无新文章则不推送
+### 修改 Pocket-Plus-Calibre-Plugin 实现无新文章则不推送
 
 下面第一个 try 块是原 recipe 里本来就有的。搜索并找到之后将后面的代码粘进去就可以实现无新文章则不推送。别忘了定义 `SESSION_DATA_DIR` 变量并指向一个目录。
 
@@ -215,35 +211,3 @@ Wallabag 没有官方 recipe 但可以在[配置 RSS](https://doc.wallabag.org/u
                 else:
                     self.abort_recipe_processing('No new articles in the Pocket account "{}"'.format(self.config.user))
 ```
-
-### 我的定时发送 Pocket 文章到 Kindle 的脚本
-
-这个脚本我加到 cron 里了。
-
-```bash
-#!/bin/bash
-
-echo "----------------------"
-echo "Start fetching Pocket"
-
-date
-
-cd /path/to/your/pocket/data
-
-# name the epub with date and time (to seconds)
-EPUB_FILE_NAME=pocket_$(date +"%Y-%m-%d_%H-%M-%S").epub
-
-# generate the epub
-ebook-convert Pocket.recipe $EPUB_FILE_NAME
-
-# if file exists
-if [ -f $EPUB_FILE_NAME ]; then
-    # send the file to kindle
-    calibre-smtp -e SSL -u username -p password -r email.server.domain --port 465 --attachment $EPUB_FILE_NAME --subject "Pocket" "your_email_address" "your_own@kindle.com" "Pocket unread, fetched on $(date +"%Y-%m-%d %H:%M:%S")"
-fi
-
-echo "End fetching Pocket"
-echo "----------------------"
-```
-
-[^1]: 这里的「服务器抓取」指的是把网页链接发送给某个在线服务，让它的服务器去访问和提取网页内容。但这种方法的问题是，「稍后读」服务器那边并没有你的登录信息，无法登录并查看这些需要登录才能查看的页面。与此相反，「浏览器抓取」方法是在你本地浏览器已经登录并有权限的情况下进行，直接把你正在查看的网页内容发给「稍后读」服务。
