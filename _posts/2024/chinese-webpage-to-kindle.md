@@ -28,12 +28,12 @@ Kindle 退出中国之后，国区的微信推送和 Send to Kindle 服务都结
 
 目前，还能用的服务包括但不限于以下这些：
 
-- **Send to Kindle**：由 Amazon 官方提供的服务，现在一般使用美区 amazon 帐户进行推送。
-- **Pocket**：Mozilla 旗下的热门「稍后读」服务。
-- **Instapaper**：在 Kindle 还热门的时候一度很火的「稍后读」服务，曾经最大亮点是推送到 Kindle 上的文章合集非常精致。
-- **Wallabag**：一个开源的「稍后读」服务，可以自己搭建服务器也可以使用官方服务。
-- **Calibre**：一款功能强大的电子书管理与转换工具。
-- **微信读书**: 如果要读微信公众号的话，可能是最方便的之一？也算是个歪门斜道的办法。
+- [**Send to Kindle**](https://chromewebstore.google.com/detail/send-to-kindle-for-google/cgdjpilhipecahhcilnafpblkieebhea)：由 Amazon 官方提供的服务，现在一般使用美区 amazon 帐户进行推送。
+- [**Pocket**](https://getpocket.com/)：Mozilla 旗下的热门「稍后读」服务。
+- [**Instapaper**](https://www.instapaper.com/)：在 Kindle 还热门的时候一度很火的「稍后读」服务，曾经最大亮点是推送到 Kindle 上的文章合集非常精致。
+- [**Wallabag**](https://doc.wallabag.org/user/configuration/rss/)：一个开源的「稍后读」服务，可以自己搭建服务器也可以使用官方服务。
+- [**Calibre**](https://manual.calibre-ebook.com/news.html)：一款功能强大的电子书管理与转换工具，自带新闻抓取和邮件推送功能。
+- [**微信读书**](https://weread.qq.com/): 如果要读微信公众号的话，可能是最方便的之一？也算是个歪门斜道的办法。
 - Word 文档之类的奇技淫巧。
 
 ---
@@ -97,11 +97,12 @@ Kindle 退出中国之后，国区的微信推送和 Send to Kindle 服务都结
 
 ### **Pocket**
 
-如前述，现在它是 Mozilla 旗下「稍后阅读」服务，Firefox 原生集成，各平台都有 app 支持。
+如前述，现在它是 Mozilla 旗下，Firefox 原生集成，各平台都有 app 支持。
 
-不打算自己折腾 Calibre 的话，第三方服务「Pocket to Kindle」可能是目前唯一的选择。这个服务如前所述，也有中文显示问题。
+不打算自己折腾 Calibre 的话，第三方服务「Pocket to Kindle」可能是目前唯一的 Kindle 推送方案。这个服务如前所述，也有中文显示问题。
 
 除了中文显示这个致命问题，还有一些小毛病：
+
 - 如果免费版功能不敷使用，要买高级会员的话，Pocket 高级版 $5/月，Pocket to Kindle $3/月。Pocket to Kindle 免费版每周仅可推送 5 次，对于高频使用者不太够用。但反正中文显示是个不堪用的状态，讨论一个不能用的服务的缺点也没什么意义。
 - 部分网页不能从浏览器端抓取，导致抓不到。
 
@@ -193,11 +194,11 @@ Wallabag 没有官方 recipe 但可以在[配置 RSS](https://doc.wallabag.org/u
                         raise e
 
                 all_item_id = set()
-                for item in dict(response[&#039;list&#039;]):
-                    all_item_id.add(str(response[&#039;list&#039;][item][&#039;resolved_id&#039;]))
+                for item in dict(response['list']):
+                    all_item_id.add(str(response['list'][item]['resolved_id']))
                 # compare with previous saved ids
-                if path.exists(path.join(SESSION_DATA_DIR,&#039;pocket_ids.txt&#039;)):
-                    with open(path.join(SESSION_DATA_DIR,&#039;pocket_ids.txt&#039;)) as f:
+                if path.exists(path.join(SESSION_DATA_DIR,'pocket_ids.txt')):
+                    with open(path.join(SESSION_DATA_DIR,'pocket_ids.txt')) as f:
                         # read in old_item_id
                         old_item_id = set(f.read().splitlines())
                 else: 
@@ -205,8 +206,8 @@ Wallabag 没有官方 recipe 但可以在[配置 RSS](https://doc.wallabag.org/u
 
                 # compare new and old
                 if old_item_id != all_item_id:
-                    with open(path.join(SESSION_DATA_DIR,&#039;pocket_ids.txt&#039;), &#039;w&#039;) as f:
-                        f.write(&#039;\n&#039;.join(all_item_id))
+                    with open(path.join(SESSION_DATA_DIR,'pocket_ids.txt'), 'w') as f:
+                        f.write('\n'.join(all_item_id))
                 else:
-                    self.abort_recipe_processing(&#039;No new articles in the Pocket account &quot;{}&quot;&#039;.format(self.config.user))
+                    self.abort_recipe_processing('No new articles in the Pocket account "{}"'.format(self.config.user))
 ```
