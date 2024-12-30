@@ -74,7 +74,11 @@ Kindle 退出中国之后，国区的微信推送和 Send to Kindle 服务都结
 - **Instapaper** （使用自带 Kindle 推送）
 - **Wallabag** （直接导出 epub 的语言也是英语）
 
-一劳永逸的解决方案有点折腾。有两个思路：一个思路是，如果能用某种办法拿到生成的 epub 文件，修改语言不就是小菜一碟了吗？Wallabag 是可以用 API 拿到每篇文章导出的 epub 的，而 Pocket 和 Instapaper 不行。另一个办法就是用 Calibre 来抓取 Pocket 或者 Instapaper 的文章，然后再发送到 Kindle。在 Calibre 抓取的时候，可以轻松设置 epub 文件的语言。
+一劳永逸的解决方案有点折腾。有两个思路：
+
+一个思路是，如果能用某种办法拿到生成的 epub 文件，修改语言不就是小菜一碟了吗？Wallabag 可以用 API 拿到每篇文章导出的 epub 的，Pocket to Kindle 的付费版可以发送到 kindle.com 之外的邮箱，同样有自行处理的余地，而 Pocket to Kindle 免费版和 Instapaper 只能发送到 kindle.com 邮箱，没有办法拿到他们生成的 epub 并做修改。
+
+另一个办法就是用 Calibre 来抓取 Pocket 或者 Instapaper 的文章，然后再发送到 Kindle。在 Calibre 抓取的时候，可以轻松设置 epub 文件的语言。
 
 无论是用什么办法，要想自动推送而不是手动抓，都得整个自己的服务器来定时抓取，设置好语言，再推送。对于不擅长技术的网友可能有些过于折腾。如果愿意把 Calibre 一直挂机的话，Calibre GUI 的配置倒是不麻烦。
 
