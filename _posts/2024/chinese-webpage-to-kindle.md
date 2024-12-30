@@ -76,7 +76,7 @@ Kindle 退出中国之后，国区的微信推送和 Send to Kindle 服务都结
 
 一劳永逸的解决方案有点折腾。有两个思路：
 
-一个思路是，如果能用某种办法拿到生成的 epub 文件，修改语言不就是小菜一碟了吗？Wallabag 可以用 API 拿到每篇文章导出的 epub 的，Pocket to Kindle 的付费版可以发送到 kindle.com 之外的邮箱，同样有自行处理的余地，而 Pocket to Kindle 免费版和 Instapaper 只能发送到 kindle.com 邮箱，没有办法拿到他们生成的 epub 并做修改。
+一个思路是，如果能用某种办法拿到生成的 epub 文件，修改语言不就是小菜一碟了吗？Wallabag 可以用 API 拿到每篇文章导出的 epub，Pocket to Kindle 的付费版可以发送到 kindle.com 之外的邮箱，同样有自行处理的余地，而 Pocket to Kindle 免费版和 Instapaper 只能发送到 kindle.com 邮箱，没有办法拿到他们生成的 epub 并做修改。
 
 另一个办法就是用 Calibre 来抓取 Pocket 或者 Instapaper 的文章，然后再发送到 Kindle。在 Calibre 抓取的时候，可以轻松设置 epub 文件的语言。
 
