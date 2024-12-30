@@ -130,9 +130,9 @@ Wallabag 的浏览器插件是本文涉及的各种「稍后读」中最好用�
 
 ### **Calibre**
 
-Calibre 差不多算是 Kindle 用户必备软件了。它有一个很有用的 recipe 功能。可以用来抓 RSS 订阅、新闻报纸和各种网站更新。它也支持把抓取后的 epub 文件邮件推送到 Kindle 上。
+Calibre 差不多算是 Kindle 用户必备软件了。它有一个很有用的 fetch news 功能，可以用来抓 RSS 订阅、新闻报纸和各种网站更新。它也支持把抓取后的 epub 文件邮件推送到 Kindle 上。
 
-如果用 Calibre 来抓取 wallabag/Pocket/Instapaper 的话，只需要在 recipe 的 class 里设置好变量 `language = 'zh'` 就可以解决中文显示问题（当然此时英文会有一些小问题，但 Kindle 黑体下的英文还能看）。
+Calibre 里用来定义如何抓取新闻源的文件叫 recipe，如果用 Calibre 来抓取 wallabag/Pocket/Instapaper 的话，只需要选用合适的 recipe 之后，在 recipe 的 class 里设置好变量 `language = 'zh'` 就可以解决中文显示问题（当然此时英文会有一些小问题，但 Kindle 黑体下的英文还能看）。
 
 如果有时间的话，也许会再写一篇详细介绍一下如何配置。
 
