@@ -54,6 +54,7 @@ Kindle 退出中国之后，国区的微信推送和 Send to Kindle 服务都结
 
 - **Wallabag**：官方浏览器插件 Wallabagger 支持用户自定义要通过浏览器抓取的站点。
 - **Send to Kindle**：全部通过浏览器抓取，但速度较慢。
+- **简悦**：浏览器侧生成阅读模式后发送。
 - **Instapaper**：似乎也支持浏览器直接抓取。
 - **Pocket**：对部分网站（如《纽约时报》）有内置支持，但无法配置特定站点的浏览器抓取。对于不支持的网站就可能报服务器抓取失败。
 
@@ -145,7 +146,7 @@ Wallabag 的浏览器插件是本文涉及的各种「稍后读」中最好用�
 
 目前有两种折腾路线。
 
-一种是使用 wallabag API 或者 python wallabag-client 将其中的文章导出为 epub，再将 epub 文件中的 `<dc:language>en</dc:language>` 一行替换为 `<dc:language>zh</dc:language>`。最后再邮件发送到 Kindle。这个路线不太折腾，但是只能推送单篇文章，如果要推送文章合集的话，反而是 Calibre 方案更省力。
+一种是使用 wallabag API 或者 python 包 wallabag-client 将其中的文章导出为 epub，再将 epub 文件中的 `<dc:language>en</dc:language>` 一行替换为 `<dc:language>zh</dc:language>`。最后再邮件发送到 Kindle。这个路线不太折腾，但是只能推送单篇文章，如果要推送文章合集的话，反而是 Calibre 方案更省力。
 
 另一种办法是使用 Calibre 抓取 wallabag 的文章并推送文章合集。
 
@@ -205,6 +206,18 @@ Wallabag 没有官方 recipe 但可以在[配置 RSS](https://doc.wallabag.org/u
 
 
 ## 附录
+
+### 参考
+
+写作本文时，除正文中已经给出链接的引用外，还参考了以下资料：
+
+[为什么 Kindle 调用的字体和电子书语言不匹配](https://bookfere.com/post/433.html)
+
+[用 GitHub Actions 让 Calibre 定时推送新闻到 Kindle](https://bookfere.com/post/1107.html)
+
+[I wrote a script that automatically sends unread wallabag articles to Kindle](https://www.reddit.com/r/selfhosted/comments/zv0zyi/i_wrote_a_script_that_automatically_sends_unread/)
+
+[https://www.xiaohongshu.com/explore/66bada96000000000d03300e](https://www.xiaohongshu.com/explore/66bada96000000000d03300e) （由于小红书的限制，必须在手机端打开此链接并跳转「小红书」 app 才可以查看内容）
 
 ### 修改 Pocket-Plus-Calibre-Plugin 使得无新文章则不推送
 
