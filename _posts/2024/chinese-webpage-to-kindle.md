@@ -187,7 +187,7 @@ Wallabag 没有官方 recipe 但可以在[配置 RSS](https://doc.wallabag.org/u
 |----------------|------------|--------------|----------|----------|----------|
 | Send to Kindle | 是         | 无           | 是       | 一般     | 有问题   |
 | 简悦           | 是         | 无           | 是       | 良好     | 优秀     |
-| Pocket         | 部分       | 通过 P2K     | 无       | 尚可     | 有问题   |
+| Pocket         | 部分       | 通过 P2K     | 通过 P2K | 尚可     | 有问题   |
 | Instapaper     | 是         | 是           | 可       | 优秀     | 有问题   |
 | Wallabag       | 是         | 通过 Calibre | 可 DIY   | 一般     | 可折腾   |
 | Calibre        | -          | 是           | 可       | 良好     | 良好     |
