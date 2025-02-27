@@ -217,7 +217,7 @@ Apple 对 passkey 的支持是御三家里最迟缓的。很长时间里，苹�
 
 总结：只支持 discoverable credential，不需要输入用户名，支持所有类型 passkey，支持所有浏览器。
 
-### Amazon 
+### Amazon
 
 Amazon 对 passkey 的支持吧，说是不支持，它倒也支持。但这个支持实在是实现的脑洞清奇。
 
@@ -238,6 +238,17 @@ Adobe 对 passkey 的支持也是比较奇特的。像 Google 一样，它在登
 最后，它甚至不提供为 passkey 重命名的功能！如果 passkey 丢失之后想删除的话，大概只能把所有 passkey 都一股脑删掉了帐。
 
 总的来说，这个支持确实很差，和 Amazon 一样，唯一的用途就是「不输密码」。
+
+### ebay
+
+ebay 对 passkey 的支持和 Adobe 有些相像，但是用户体验更差一些。见下面的第四条。
+
+- 它只支持 NDC，所以无法实现免用户名登入。
+- 在 passkey 管理页面也没有重命名选项，难以区分不同的 passkey，出问题的时候只能选择全部撤销。
+- 并不需要开启 2FA 就可以使用 passkey，它的 2FA 选项里也不包括 passkey。也就是说，它和 Amazon Adobe 在此问题上的观点是一样的：passkey 仅仅是密码的替代。
+- 用户名需要自行输入，在输入密码的地方，如果浏览器支持的话，有一个使用 passkey 的下拉框，选择之后可以使用 passkey 跳过密码。（其它几家都是在用户名输入框就有 passkey 下拉框）
+
+总结：只支持 NDC，只能作为密码的替代。
 
 ### NVidia
 
