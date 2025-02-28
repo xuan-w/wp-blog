@@ -21,6 +21,8 @@ categories:
   - Knowhow
 ---
 
+Update on Feb 28 2025: Kindle 新固件已经解决了字体设置不能持久生效的问题。中文显示问题比以前好解决了。
+
 Update on Jan 06 2025: 在比较列表中增加了「简悦」。
 
 Kindle 退出中国之后，国区的微信推送和 Send to Kindle 服务都结束运营。还能用的网页推送服务大多 bug 很多，好用的不多。在此列举并比较一些有代表性的服务。目前的现成服务都不完美，如果要满足各种要求，折腾是免不了的。
@@ -69,9 +71,15 @@ Kindle 退出中国之后，国区的微信推送和 Send to Kindle 服务都结
 
 可惜 Kindle 是个封闭系统，没有办法设置文字 fallback 的顺序。一种解决办法是手动安装一个支持 CJK 字符的字体，比如说 [Noto Sans CJK](https://github.com/notofonts/noto-cjk) （如果只看中文，安装 [Noto Sans SC](https://fonts.google.com/noto/specimen/Noto+Sans+SC) 就够了）。字体的安装比较简单，直接拷到 fonts 目录下就可以。
 
-折磨人的点在什么地方呢？不知道是目前 Kindle 系统的 bug 还是怎么回事，每次打开文件的时候，都得重新设置一遍字体！甚至退出到主页、打开一下浏览器都会重设字体。实在是有点不能忍。
+~~折磨人的点在什么地方呢？不知道是目前 Kindle 系统的 bug 还是怎么回事，每次打开文件的时候，都得重新设置一遍字体！甚至退出到主页、打开一下浏览器都会重设字体。实在是有点不能忍。~~
 
-以下所有服务，统统都有这个毛病：
+**更新：在 Kindle 系统升级到 5.17.1.0.4 之后，这个 bug 已经消失。原 bug 发生于 5.17.1.0 固件。**
+
+> 如果不想折腾中文推送的话，现在可以通过安装支持中文显示的字体并保存一个新主题来部分解决这个问题。这样做之后，体验可以接近 KOReader。对于读所有书都喜欢用同一套字体的人来说，设置之后就基本无感了。对于英文中文书习惯用不同字体的人来说，会多一点切换字体主题的麻烦——因为这些推送来的网页声称自己是英文，调用专门设置的外置中文字体之后，再切换到其它英文读物时仍然会使用这套中文字体，就得再切一下主题才能切回喜欢的英文字体。KOReader 比 Kindle 好的点在于，KOReader 默认记忆这本书的主题设置，而不像 Kindle 的主题是全局生效。
+
+> 由于下面为推送服务正确配置语言的办法大多比较折腾，如果读者对此要求不高，语言问题可以不用考虑，只考虑网页推送服务的抓取质量和阅读体验即可。
+
+以下所有服务，统统都有这个语言设置错误的毛病：
 
 - **Send to Kindle** （美区）
 - **Pocket** （使用 Pocket to Kindle 服务）
@@ -148,7 +156,7 @@ Wallabag 的浏览器插件是本文涉及的各种「稍后读」中最好用�
 
 一种是使用 wallabag API 或者 python 包 wallabag-client 将其中的文章导出为 epub，再将 epub 文件中的 `<dc:language>en</dc:language>` 一行替换为 `<dc:language>zh</dc:language>`。最后再邮件发送到 Kindle。这个路线不太折腾，但是只能推送单篇文章，如果要推送文章合集的话，反而是 Calibre 方案更省力。
 
-另一种办法是使用 Calibre 抓取 wallabag 的文章并推送文章合集。
+另一种办法是使用 Calibre 抓取 wallabag 的 RSS Feed 并推送文章合集。
 
 如果不限于 Amazon 系统的话，可以给 Kindle 越狱装上 [KOReader](https://koreader.rocks/)。KOReader 自带一个 wallabag 插件，还有人写了一个据说在 wallabag 里文章很多的时候[性能更好的插件](https://github.com/clach04/wallabag2.koplugin)。KOReader 里的字体设置比 Kindle 自带系统细致得多，不需要设置文档语言也能调出可用的字体组合。
 
@@ -161,6 +169,8 @@ Calibre 里用来定义如何抓取新闻源的文件叫 recipe，如果用 Cali
 如果有时间的话，也许会再写一篇详细介绍一下如何配置。
 
 Wallabag 没有官方 recipe 但可以在[配置 RSS](https://doc.wallabag.org/user/configuration/rss/) 之后直接抓取。Instapaper 和 Pocket 都有官方 recipe，可以直接使用。不过我更喜欢[另一个 Pocket recipe](https://github.com/mmagnus/Pocket-Plus-Calibre-Plugin)。
+
+由于 Pocket 的 API 不提供 Pocket 处理好的网页，只提供原始网页链接，Calibre 再去抓取网页做成 epub，会常常遇到被服务器拒绝抓取、抓取图片失败、版式错乱等问题。而 wallabag 的 RSS 是全文 RSS。因此 calibre 配合 wallabag 的使用体验要好于配合 Pocket 使用。
 
 如果使用 Calibre GUI 的话，直接在 Fetch News 按钮下面[配置](https://manual.calibre-ebook.com/news.html "calibre manual about how to add news source")就可以了。如果使用 Calibre 的命令行工具 `ebook-convert` 的话，可以写一个简单的脚本来定时抓取并发送邮件。
 
@@ -193,20 +203,23 @@ Wallabag 没有官方 recipe 但可以在[配置 RSS](https://doc.wallabag.org/u
 | Pocket         | 部分       | 通过 P2K     | 通过 P2K | 尚可     | 有问题   |
 | Instapaper     | 是         | 是           | 可       | 优秀     | 有问题   |
 | Wallabag       | 是         | 通过 Calibre | 可 DIY   | 一般     | 可折腾   |
-| Calibre        | -          | 是           | 可       | 良好     | 良好     |
+| Calibre        | -          | 是           | 可       | 不好     | 良好     |
 | 微信读书       | -          | -            | 是       | -        | 优秀     |
 | WPS            | -          | -            | 是       | 差       | 良好     |
 
 为 Kindle 越狱后装上 KOReader 的方案不算在上表中，因为所谓「中文支持」问题，仅仅是 Amazon 原生系统才有的问题。KOReader 支持 wallabag 同步和 calibre 无线同步。
 
+
 最后我的推荐是：
 
 - 如果只看英文网页，推荐 Instapaper。
 - 如果有中文需求的话
-  - 怕折腾但很少有把网页推送到 Kindle 的需求，可以考虑微信读书或者 docx 这类奇技淫巧。
-  - 能折腾的话，推荐 Calibre 配合 Wallabag。如果已经用惯了 Pocket 或者 Instapaper 懒得迁移数据，也可以考虑用 Calibre 配合它们使用。
-  - 如果只用单篇网页推送的话，「简悦」也是一个方案。
-  - 既不能折腾又有很多中文网页阅读需求，恐怕没有什么好办法了。
+  - 如果能接受安装一款新字体来解决中文显示问题，不折腾语言匹配的话，仍然推荐 Instapaper。
+  - 如果对字体和操作便利性都比较挑剔的话
+    - 怕折腾但很少有把网页推送到 Kindle 的需求，可以考虑微信读书或者 docx 这类奇技淫巧。
+    - 能折腾的话，推荐 Calibre 配合 Wallabag。如果已经用惯了 Pocket 或者 Instapaper 懒得迁移数据，也可以考虑用 Calibre 配合它们使用，效果没有 wallabag 好。
+    - 如果只用单篇网页推送的话，「简悦」也是一个方案。
+    - 既不能折腾又有很多中文网页阅读需求，恐怕没有什么好办法了。
 
 
 ## 附录
