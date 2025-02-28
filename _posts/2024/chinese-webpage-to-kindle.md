@@ -150,6 +150,8 @@ Wallabag 的浏览器插件是本文涉及的各种「稍后读」中最好用�
 
 另一种办法是使用 Calibre 抓取 wallabag 的文章并推送文章合集。
 
+如果不限于 Amazon 系统的话，可以给 Kindle 越狱装上 [KOReader](https://koreader.rocks/)。KOReader 自带一个 wallabag 插件，还有人写了一个据说在 wallabag 里文章很多的时候[性能更好的插件](https://github.com/clach04/wallabag2.koplugin)。KOReader 里的字体设置比 Kindle 自带系统细致得多，不需要设置文档语言也能调出可用的字体组合。
+
 ### **Calibre**
 
 Calibre 差不多算是 Kindle 用户必备软件了。它有一个很有用的 fetch news 功能，可以用来抓 RSS 订阅、新闻报纸和各种网站更新。它也支持把抓取后的 epub 文件邮件推送到 Kindle 上。
@@ -194,6 +196,8 @@ Wallabag 没有官方 recipe 但可以在[配置 RSS](https://doc.wallabag.org/u
 | Calibre        | -          | 是           | 可       | 良好     | 良好     |
 | 微信读书       | -          | -            | 是       | -        | 优秀     |
 | WPS            | -          | -            | 是       | 差       | 良好     |
+
+为 Kindle 越狱后装上 KOReader 的方案不算在上表中，因为所谓「中文支持」问题，仅仅是 Amazon 原生系统才有的问题。KOReader 支持 wallabag 同步和 calibre 无线同步。
 
 最后我的推荐是：
 
