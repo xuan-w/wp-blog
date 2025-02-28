@@ -21,7 +21,7 @@ categories:
   - Knowhow
 ---
 
-Update on Feb 28 2025: Kindle 新固件已经解决了字体设置不能持久生效的问题。中文显示问题比以前好解决了。
+Update on Feb 28 2025: Kindle 新固件已经解决了字体设置不能持久生效的问题。中文显示问题比以前好解决了。对于大部分读者推荐使用 Instapaper。
 
 Update on Jan 06 2025: 在比较列表中增加了「简悦」。
 
