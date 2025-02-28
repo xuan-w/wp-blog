@@ -71,7 +71,7 @@ Kindle 退出中国之后，国区的微信推送和 Send to Kindle 服务都结
 
 可惜 Kindle 是个封闭系统，没有办法设置文字 fallback 的顺序。一种解决办法是手动安装一个支持 CJK 字符的字体，比如说 [Noto Sans CJK](https://github.com/notofonts/noto-cjk) （如果只看中文，安装 [Noto Sans SC](https://fonts.google.com/noto/specimen/Noto+Sans+SC) 就够了）。字体的安装比较简单，直接拷到 fonts 目录下就可以。
 
-~~折磨人的点在什么地方呢？不知道是目前 Kindle 系统的 bug 还是怎么回事，每次打开文件的时候，都得重新设置一遍字体！甚至退出到主页、打开一下浏览器都会重设字体。实在是有点不能忍。~~
+~~折磨人的点在什么地方呢？不知道是目前 Kindle 系统的 bug 还是怎么回事，每次打开文件的时候，都得重新设置一遍字体！甚至退出到主页、打开一下浏览器都会重设字体。实在是有点不能忍~~
 
 **更新：在 Kindle 系统升级到 5.17.1.0.4 之后，这个 bug 已经消失。原 bug 发生于 5.17.1.0 固件。**
 
