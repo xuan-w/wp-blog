@@ -1,10 +1,12 @@
 ---
-post_title: 'wogh sync test (delete me)'
-post_name: 'wogh-sync-test'
-post_date: '2026-10-24 12:00:00'
-layout: post
-published: false
+ID: 410
+post_title: wogh sync test (delete me)
+post_name: wogh-sync-test
 author: Xuan
+post_date: 2026-10-24 12:00:00
+layout: post
+link: https://blog.wangxuan.name/?p=410
+published: false
 tags: [ ]
 categories:
   - Uncategorized
@@ -25,7 +27,7 @@ Some **bold**, some *italic*, `inline code` and a [link](https://example.com/).
 > a quote
 
 ```bash
-echo "code block"
+echo &quot;code block&quot;
 ```
 
 中文段落，测试一下。
